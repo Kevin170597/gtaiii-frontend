@@ -1,0 +1,11 @@
+.maps {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps img {
+    width: 70%;
+}

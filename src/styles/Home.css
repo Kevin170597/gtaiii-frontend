@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Saira+Condensed:wght@100&display=swap');
+
+.Home {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .cover {
+    width: 23%;
+    height: 80%;
+}
+
+.Home .cover img {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.Home .introduction {
+    width: 50%;
+    height: 80%;
+    padding-left: 50px;
+}
+
+.Home .introduction h1 {
+    font-family: 'Courgette', cursive;
+    color: rgb(161, 23, 81);
+    margin-bottom: 40px;
+}
+
+.Home .introduction h2 {
+    font-family: 'Courgette', cursive;
+    color: rgb(161, 23, 81);
+    margin-top: 40px;
+}
+
+.Home .claude {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Home .claude img {
+    height: 90%;
+}

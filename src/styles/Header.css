@@ -1,0 +1,39 @@
+.header {
+    height: 8vh;
+    display: flex;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a img {
+    width: 40%;
+}
+
+.title {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.contact {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 30px;
+}
