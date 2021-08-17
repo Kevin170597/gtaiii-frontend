@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Maps from "./components/Maps";
+import ItemsGuns from "./components/ItemsGuns";
 
 function App() {
   return (
@@ -15,15 +16,15 @@ function App() {
         <div className="container">
           <Header />
           <Switch>
-            
             <Route path="/maps">
               <Maps />
             </Route>
-
+            <Route path="/itemsguns">
+              <ItemsGuns />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
-            
           </Switch>
         </div>
         </Router>

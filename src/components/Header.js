@@ -12,11 +12,11 @@ function Header() {
                     <img src={logo} alt="logo"></img>
                 </NavLink>
             </div>
-            <di className="title">
+            <div className="title">
                 <h1>Grand Theft Auto: III</h1>
-            </di>
+            </div>
             <div className="contact">
-                <i class="far fa-envelope"></i>
+                <i className="far fa-envelope"></i>
             </div>
         </div>
     )

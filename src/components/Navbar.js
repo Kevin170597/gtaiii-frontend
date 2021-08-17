@@ -8,7 +8,7 @@ function Navbar() {
             <ul>
             <NavLink to="/">1</NavLink>
             <NavLink to="/maps">2</NavLink>
-            <li>3</li>
+            <NavLink to="/itemsguns">3</NavLink>
             <li>4</li>
             <li>5</li>
             <li>6</li>

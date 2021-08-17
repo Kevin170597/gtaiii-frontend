@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Saira+Condensed:wght@100&display=swap');
+
+.itemsContainer {
+    width: 100%;
+    display: flex;
+}
+
+.itemsContainer .items {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itemsContainer .items .itemsCards {
+    width: 45%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemsContainer .items .itemsCards .itemImage {
+    width: 100%;
+    background-color: #A5B4D5;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsContainer .items .itemsCards .itemImage img {
+    width: 40%;
+}
+
+.itemsContainer .items .itemsCards .itemInfo {
+    background-color: rgb(36, 34, 33);
+    width: 100%;
+    padding: 15px;
+}
+
+.itemsContainer .items .itemsCards .itemInfo h4 {
+    color: rgb(161, 23, 81);
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+
+.itemsContainer .items .itemsCards .itemInfo p {
+    color: white;
+}
+
+.itemsContainer .guns {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itemsContainer .guns .gunsCards {
+    width: 30%;
+    background-color: tomato;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemsContainer .guns .gunsCards .gunImage {
+    width: 100%;
+    background-color: #A3BB99;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsContainer .guns .gunsCards .gunImage img {
+    width: 40%;
+}
+
+.itemsContainer .guns .gunsCards .gunInfo {
+    background-color: rgb(36, 34, 33);
+    width: 100%;
+    padding: 15px;
+}
+
+.itemsContainer .guns .gunsCards .gunInfo h4 {
+    color: rgb(161, 23, 81);
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+
+.itemsContainer .guns .gunsCards .gunInfo p {
+    color: white;
+}

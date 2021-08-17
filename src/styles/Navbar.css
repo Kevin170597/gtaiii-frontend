@@ -1,6 +1,6 @@
 .navbar {
     width: 5%;
-    height: 100%;
+    
     background-color: rgb(161, 23, 81);
 }
 
@@ -10,9 +10,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 
 .navbar ul li {
     height: 8%;
     list-style: none;
+    margin: auto;
 }
