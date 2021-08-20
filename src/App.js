@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Maps from "./components/Maps";
 import ItemsGuns from "./components/ItemsGuns";
+import Bands from "./components/Bands";
+import Vehicles from "./components/Vehicles";
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
             </Route>
             <Route path="/itemsguns">
               <ItemsGuns />
+            </Route>
+            <Route path="/bands">
+              <Bands />
+            </Route>
+            <Route path="/vehicles">
+              <Vehicles />
             </Route>
             <Route path="/">
               <Home />

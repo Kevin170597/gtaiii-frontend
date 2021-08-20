@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/ItemsGuns.css";
 
-import guns from "../assets/guns_gun.png";
-
 function ItemsGuns() {
     const [stateItems, setItems] = useState("");
     console.log(stateItems)

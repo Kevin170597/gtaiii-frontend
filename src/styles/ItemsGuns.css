@@ -58,7 +58,6 @@
 
 .itemsContainer .guns .gunsCards {
     width: 30%;
-    background-color: tomato;
     margin: 5px;
     display: flex;
     flex-direction: column;

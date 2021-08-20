@@ -1,0 +1,190 @@
+.bandsContainer {
+    margin: 10px;
+    min-height: 92vh;
+}
+
+.bandsContainer h1 {
+    color: rgb(161, 23, 81);
+    font-family: 'Courgette', cursive;
+    margin-left: 10px;
+}
+
+.bandsContainer .cardsContainer {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bandsContainer .cardsContainer .bandsCard {
+    width: 22%;
+    margin: 8px;
+}
+
+@keyframes shadow {
+    from {box-shadow: none;}
+    to {box-shadow: 0px -3px 10px 6px rgba(0,0,0,0.31);
+        -webkit-box-shadow: 0px -3px 10px 6px rgba(0,0,0,0.31);
+        -moz-box-shadow: 0px -3px 10px 6px rgba(0,0,0,0.31);
+    }
+}
+
+.bandsContainer .cardsContainer .bandsCard:hover {
+    animation-name: shadow;
+    animation-duration: 0.2s;
+    box-shadow: 0px -3px 10px 6px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 0px -3px 10px 6px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px -3px 10px 6px rgba(0,0,0,0.31);
+}
+
+.bandsContainer .cardsContainer .bandsCard h4 {
+    background-color: rgb(36, 34, 33);
+    color: rgb(161, 23, 81);
+    font-family: 'Courgette', cursive;
+    padding: 8px;
+}
+
+.bandsContainer .cardsContainer .bandsCard .logoContainer {
+    background-color: #A3BB99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.bandsContainer .cardsContainer .bandsCard img {
+    width: 70%;
+}
+
+@keyframes backdrop {
+    from {background: none;}
+    to {background-color: rgba(19, 18, 18, 0.438);}
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal {
+    background-color: rgba(19, 18, 18, 0.438);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    height: 100%;
+    bottom: 0%;
+    width: 100%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: backdrop;
+    animation-duration: 0.1s;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modalNone {
+    display: none;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard {
+    background-color: rgb(36, 34, 33);
+    width: 60%;
+    height: 70%;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalHeader {
+    display: flex;
+    align-items: center;
+    height: 12%;
+    padding: 10px;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalHeader .modalTitle {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalHeader .close {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalHeader .close i {
+    font-size: 20px;
+    color: rgb(194, 178, 145);
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo {
+    height: 88%;
+    display: flex;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .bandlogo {
+    padding: 5px;
+    width: 30%;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .bandlogo .info {
+    background-color: rgb(161, 23, 81);
+    color: white;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .bandlogo .logoImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 1px rgb(49, 47, 47);
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .bandlogo .logoImage img {
+    width: 90%;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .member {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .member img {
+    width: 90%;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .car {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .car .carImage {
+    width: 100%;
+    position: relative;
+    bottom: 65%;
+}
+
+.bandsContainer .cardsContainer .bandsCard .modal .modalCard .modalInfo .car .sunImage {
+    width: 80%;
+    position: relative;
+    top: 10%;
+}
+
+
+
+
+
+
+
+
+.loadingContainer {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

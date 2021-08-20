@@ -37,3 +37,55 @@
 .contact i {
     font-size: 30px;
 }
+
+@keyframes contactColor {
+    from {color: black;}
+    to {color: rgb(161, 23, 81);}
+}
+
+.contact i:hover {
+    color: rgb(161, 23, 81);
+    animation-name: contactColor;
+    animation-duration: 0.5s;
+}
+
+.contact .contactCardInvisible {
+    display: none;
+}
+
+@keyframes contactCard {
+    from {opacity: 0; filter: blur(20px);}
+    to {opacity: 1; filter: blur(0px);}
+}
+
+.contact .contactCardVisible {
+    background-color: rgb(161, 23, 81);
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    padding: 12px;
+    animation-name: contactCard;
+    animation-duration: 0.5s;
+}
+
+.contact .contactCardVisible h4 {
+    font-family: 'Courgette', cursive;
+    color: white;
+}
+
+.contact .contactCardVisible p {
+    color: white;
+}
+
+.contact .contactCardVisible a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact .contactCardVisible a i {
+    font-size: 15px;
+    margin-right: 5px;
+}
