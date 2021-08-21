@@ -1,9 +1,9 @@
-.navbar {
+nav {
     width: 5%;
-    background-color: rgb(161, 23, 81);
+    
 }
 
-.navbar .links {
+nav section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@
     position: fixed;
 }
 
-.navbar .links .link {
+nav section article {
     width: 100%;
     height: 6%;
     display: flex;
@@ -22,9 +22,10 @@
     margin: 3px;
 }
 
-.navbar .links .link a {
+nav section article a {
     width: 60%;
     height: 100%;
+    color: white;
 }
 
 @keyframes tooltipBlur {
@@ -32,8 +33,12 @@
     to {opacity: 1; filter: blur(0px); height: 28px;}
 }
 
-.navbar .links .link .tooltip {
-    background-color: rgb(161, 23, 81);
+article .tooltipNone {
+    display: none;
+}
+
+article .tooltip {
+    background-color: #1D2930;
     width: 120px;
     height: 28px;
     position: absolute;
@@ -44,11 +49,7 @@
     animation-duration: 0.5s;
 }
 
-.navbar .links .link .tooltipNone {
-    display: none;
-}
-
-.navbar .links a {
+nav section a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,16 +60,15 @@
 }
 
 @keyframes linksBlur {
-    from {filter: blur(5px); background-color: rgb(161, 23, 81);}
-    to {filter: blur(0px);background-color: rgb(247, 242, 213);}
+    from {filter: blur(5px);}
+    to {filter: blur(0px);background-color: rgb(192, 163, 1);}
 }
 
-.navbar .links a:hover {
-    background-color: rgb(247, 242, 213);
+nav section a:hover {
+    background-color: rgb(192, 163, 1);
     animation-name: linksBlur;
     animation-duration: 0.3s;
-}
-
-.navbar .links a .tooltip {
-    background-color: rgb(20, 220, 37);
+    box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+-webkit-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+-moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
 }

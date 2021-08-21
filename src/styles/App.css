@@ -1,7 +1,8 @@
 .App {
-    background-color: rgb(247, 242, 213);
     width: 100%;
     display: flex;
+    background-color: #202F37;
+    background-size: cover;
 }
 
 .container {

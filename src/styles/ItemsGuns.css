@@ -22,11 +22,12 @@
 
 .itemsContainer .items .itemsCards .itemImage {
     width: 100%;
-    background-color: #A5B4D5;
-    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #28373E;
 }
 
 .itemsContainer .items .itemsCards .itemImage img {
@@ -34,13 +35,13 @@
 }
 
 .itemsContainer .items .itemsCards .itemInfo {
-    background-color: rgb(36, 34, 33);
     width: 100%;
     padding: 15px;
+    background-color: #28373E;
 }
 
 .itemsContainer .items .itemsCards .itemInfo h4 {
-    color: rgb(161, 23, 81);
+    color: white;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
@@ -66,7 +67,7 @@
 
 .itemsContainer .guns .gunsCards .gunImage {
     width: 100%;
-    background-color: #A3BB99;
+    background-color: #28373E;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -78,13 +79,13 @@
 }
 
 .itemsContainer .guns .gunsCards .gunInfo {
-    background-color: rgb(36, 34, 33);
+    background-color: #2E3D45;
     width: 100%;
     padding: 15px;
 }
 
 .itemsContainer .guns .gunsCards .gunInfo h4 {
-    color: rgb(161, 23, 81);
+    color: white;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }

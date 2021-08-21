@@ -5,9 +5,9 @@ import "../styles/Maps.css";
 
 function Maps() {
     return (
-        <div className="maps">
+        <section className="maps">
             <img src={map} alt="map"></img>
-        </div>
+        </section>
     )
 }
 

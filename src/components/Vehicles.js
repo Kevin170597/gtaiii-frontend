@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/Vehicles.css";
 
-import car from "../assets/diablo_stallion.png";
-
 function Vehicles() {
     const [stateVehicles, setVehicles] = useState("");
 
@@ -20,7 +18,7 @@ function Vehicles() {
                     stateVehicles.map((vehicle) =>
                         <div className="vehicleCard" key={vehicle.id}>
                             <div className="vehicleImage">
-                                <img src={car} alt="vehicle"></img>
+                                <img src={vehicle.image} alt="vehicle"></img>
                             </div>
                             <div className="vehicleInfo">
                                 <h4>{vehicle.name}</h4>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Saira+Condensed:wght@100&display=swap');
 
-.Home {
+section.home {
     width: 100%;
     height: 92vh;
     display: flex;
@@ -13,37 +13,39 @@
     to {opacity: 1; filter: blur(0px);}
 }
 
-.Home .cover {
+article.cover {
     width: 23%;
     height: 80%;
     animation-name: imageBlur;
     animation-duration: 0.6s;
 }
 
-.Home .cover img {
+article.cover img {
     width: 90%;
     margin-left: 10%;
 }
 
-.Home .introduction {
+article.introduction {
     width: 50%;
     height: 80%;
     padding-left: 50px;
+    color: white;
 }
 
-.Home .introduction h1 {
+article.introduction h1 {
     font-family: 'Courgette', cursive;
-    color: rgb(161, 23, 81);
+    font-size: 25px;
+    color: white;
     margin-bottom: 40px;
 }
 
-.Home .introduction h2 {
+article.introduction h2 {
     font-family: 'Courgette', cursive;
-    color: rgb(161, 23, 81);
+    color: white;
     margin-top: 40px;
 }
 
-.Home .claude {
+article.claude {
     width: 25%;
     height: 80%;
     display: flex;
@@ -53,6 +55,6 @@
     animation-duration: 0.6s;
 }
 
-.Home .claude img {
+article.claude img {
     height: 90%;
 }

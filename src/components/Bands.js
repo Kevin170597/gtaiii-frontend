@@ -17,59 +17,60 @@ function Bands() {
     }, []);
 
     return (
-        <div className="bandsContainer">
-            <h1>Bandas</h1>
-            <div className="cardsContainer">
+        <section className="bandsContainer">
+            <section className="bandsTitle">
+                <h1>Bandas</h1>
+            </section>
+            <section className="cardsContainer">
                 {stateBands &&
                     stateBands.map((band) =>
-                        <div className="bandsCard" key={band.id}>
+                        <article key={band.id}>
                             <h4>{band.name}</h4>
-                            <div onClick={() => setModal(band.id)} className="logoContainer">
+                            <figure onClick={() => setModal(band.id)} className="logoContainer">
                                 <img src={band.logo} alt="logo"></img>
-                            </div>
+                            </figure>
                             <div className={stateModal === band.id ? "modal" : "modalNone"}>
                                 <div className="modalCard">
-                                    <div className="modalHeader">
+                                    <section className="modalHeader">
                                         <div className="modalTitle">
                                             <h1>{band.name}</h1>
                                         </div>
                                         <div className="close">
                                             <i onClick={() => setModal("modalNone")} className="fas fa-times"></i>
                                         </div>
-                                    </div>
-                                    <div className="modalInfo">
-                                        <div className="bandlogo">
-                                            
+                                    </section>
+                                    <section className="modalInfo">
+                                        <article className="bandlogo">
                                             <div className="info">
                                                 <p>Jefe: {band.boss}</p>
                                                 <p>Localización: {band.location}</p>
                                                 <p>Nacionalidad: {band.nationality}</p>
                                                 <p>Vehiculo: {band.vehicle}</p>
                                             </div>
-                                            <div className="logoImage">
+                                            <figure className="logoImage">
                                                 <img src={band.logo} alt="logo"></img>
-                                            </div>
-                                        </div>
-                                        <div className="member">
+                                            </figure>
+                                        </article>
+                                        <figure className="member">
                                             <img src={band.member} alt="member"></img>
-                                        </div>
-                                        <div className="car">
+                                        </figure>
+                                        <figure className="car">
                                             <img className="sunImage" src={sun} alt="sun"></img>
                                             <img className="carImage" src={band.car} alt="car"></img>
-                                        </div>
-                                    </div>
+                                        </figure>
+                                    </section>
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     ) 
                 } 
-            </div>
+            </section>
             {!stateBands &&
                     <div className="loadingContainer">
                         <img src={"https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif"} alt="loading"></img>
                     </div>
                 }
-        </div>
+        </section>
     )
 }
 
