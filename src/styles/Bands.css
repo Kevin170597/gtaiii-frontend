@@ -4,6 +4,7 @@ section.bandsContainer {
 }
 
 section.bandsTitle {
+    height: 10vh;
     padding: 15px;
 }
 
@@ -186,18 +187,4 @@ figure.car .sunImage {
     width: 80%;
     position: relative;
     top: 10%;
-}
-
-
-
-
-
-
-
-
-.loadingContainer {
-    min-height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

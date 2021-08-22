@@ -25,7 +25,7 @@ function Navbar() {
                     <div className={stateTip === 4 ? "tooltip " : "tooltipNone"}>Vehiculos</div>
                 </article>
                 <article onMouseEnter={() => setTip(5)} onMouseLeave={() => setTip("tooltipNone")}>
-                    <NavLink to="/">5</NavLink>
+                    <NavLink to="/missions">5</NavLink>
                     <div className={stateTip === 5 ? "tooltip " : "tooltipNone"}>Misiones</div>
                 </article>
                 <article onMouseEnter={() => setTip(6)} onMouseLeave={() => setTip("tooltipNone")}>

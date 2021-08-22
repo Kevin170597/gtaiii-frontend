@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/ItemsGuns.css";
 
+import Loading from "./Loading";
+
 function ItemsGuns() {
     const [stateItems, setItems] = useState("");
     console.log(stateItems)
@@ -19,39 +21,47 @@ function ItemsGuns() {
     
 
     return (
-        <div className="itemsContainer">
-            <div className="items">
-                {stateItems &&
-                    stateItems.map((item) => 
-                        <div className="itemsCards" key={item.id}>
-                            <div className="itemImage">
-                                <img src={item.image} alt="item"></img>
+        <div className="itemsAndGuns">
+            <section className="itemsTitle">
+                <h1>Items y armas</h1>
+            </section>
+            <div className="itemsContainer">
+                <div className="items">
+                    {stateItems &&
+                        stateItems.map((item) => 
+                            <div className="itemsCards" key={item.id}>
+                                <div className="itemImage">
+                                    <img src={item.image} alt="item"></img>
+                                </div>
+                                <div className="itemInfo">
+                                    <h4>{item.name}</h4>
+                                    <p>{item.description}</p>
+                                </div>
                             </div>
-                            <div className="itemInfo">
-                                <h4>{item.name}</h4>
-                                <p>{item.description}</p>
+                        )
+                    }
+                </div>
+                <div className="guns">
+                    {stateGuns &&
+                        stateGuns.map((gun) =>
+                            <div className="gunsCards" key={gun.id}>
+                                <div className="gunImage">
+                                    <img src={gun.image} alt="gun"></img>
+                                </div>
+                                <div className="gunInfo">
+                                    <h4>{gun.name}</h4>
+                                    <p>$ {gun.price}</p>
+                                    <p>Daño a personas: {gun.people_damage}</p>
+                                    <p>Daño a vehiculos: {gun.vehicle_damage}</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                }
+                        )
+                    }
+                </div>
             </div>
-            <div className="guns">
-                {stateGuns &&
-                    stateGuns.map((gun) =>
-                        <div className="gunsCards" key={gun.id}>
-                            <div className="gunImage">
-                                <img src={gun.image} alt="gun"></img>
-                            </div>
-                            <div className="gunInfo">
-                                <h4>{gun.name}</h4>
-                                <p>$ {gun.price}</p>
-                                <p>Daño a personas: {gun.people_damage}</p>
-                                <p>Daño a vehiculos: {gun.vehicle_damage}</p>
-                            </div>
-                        </div>
-                    )
-                }
-            </div>
+            {!stateGuns && !stateItems &&
+                <Loading />
+            }
         </div>
     )
 }

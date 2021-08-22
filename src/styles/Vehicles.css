@@ -3,10 +3,14 @@
     min-height: 92vh;
 }
 
-.vehiclesContainer h1 {
+section.vehiclesTitle {
+    height: 10vh;
+    padding: 15px;
+}
+
+section.vehiclesTitle h1 {
     color: white;
     font-family: 'Courgette', cursive;
-    margin-left: 10px;
     font-size: 25px;
 }
 

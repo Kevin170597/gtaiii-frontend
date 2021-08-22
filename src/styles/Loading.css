@@ -1,0 +1,9 @@
+.loadingContainer {
+    display: flex;
+    justify-content: center;
+    height: 82vh;
+}
+
+.loadingContainer img {
+    height: 90%;
+}

@@ -9,32 +9,36 @@ import Maps from "./components/Maps";
 import ItemsGuns from "./components/ItemsGuns";
 import Bands from "./components/Bands";
 import Vehicles from "./components/Vehicles";
+import Missions from "./components/Missions";
 
 function App() {
   return (
       <div className="App">
         <Router>
-        <Navbar />
-        <div className="container">
-          <Header />
-          <Switch>
-            <Route path="/maps">
-              <Maps />
-            </Route>
-            <Route path="/itemsguns">
-              <ItemsGuns />
-            </Route>
-            <Route path="/bands">
-              <Bands />
-            </Route>
-            <Route path="/vehicles">
-              <Vehicles />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
+          <Navbar />
+          <div className="container">
+            <Header />
+            <Switch>
+              <Route path="/maps">
+                <Maps />
+              </Route>
+              <Route path="/itemsguns">
+                <ItemsGuns />
+              </Route>
+              <Route path="/bands">
+                <Bands />
+              </Route>
+              <Route path="/vehicles">
+                <Vehicles />
+              </Route>
+              <Route path="/missions">
+                <Missions />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </div>
   );

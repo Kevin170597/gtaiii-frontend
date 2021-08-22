@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "../styles/Vehicles.css";
 
+import Loading from "./Loading";
+
 function Vehicles() {
     const [stateVehicles, setVehicles] = useState("");
 
@@ -12,7 +14,9 @@ function Vehicles() {
 
     return (
         <div className="vehiclesContainer">
-            <h1>Vehiculos</h1>
+            <section className="vehiclesTitle">
+                <h1>Vehiculos</h1>
+            </section>
             <div className="vehicles">
                 {stateVehicles &&
                     stateVehicles.map((vehicle) =>
@@ -28,6 +32,9 @@ function Vehicles() {
                     )
                 }
             </div>
+            {!stateVehicles &&
+                    <Loading />
+                }
         </div>
     )
 }

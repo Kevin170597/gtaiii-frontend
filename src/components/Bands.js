@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import "../styles/Bands.css";
 
 import sun from "../assets/sun.png";
+import Loading from "./Loading";
 
 function Bands() {
     const [stateBands, setBands] = useState("");
@@ -66,9 +67,7 @@ function Bands() {
                 } 
             </section>
             {!stateBands &&
-                    <div className="loadingContainer">
-                        <img src={"https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif"} alt="loading"></img>
-                    </div>
+                    <Loading />
                 }
         </section>
     )
