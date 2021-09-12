@@ -1,8 +1,8 @@
 import React from 'react';
-import "../styles/Home.css";
+import "./Home.css";
 
-import cover from "../assets/cover.jpg";
-import claude from "../assets/claude_speed.png";
+import cover from "../../assets/cover.jpg";
+import claude from "../../assets/claude_speed.png";
 
 function Home() {
     return (

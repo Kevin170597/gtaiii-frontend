@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import "../styles/Bands.css";
+import "./Bands.css";
 
-import sun from "../assets/sun.png";
-import Loading from "./Loading";
+import sun from "../../assets/sun.png";
+import Loading from "../Loading/Loading";
 
 function Bands() {
     const [stateBands, setBands] = useState("");

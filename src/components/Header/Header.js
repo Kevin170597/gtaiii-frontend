@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import "../styles/Header.css";
+import "./Header.css";
 import {NavLink} from "react-router-dom";
 
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 
 function Header() {
     const [stateContact, setContact] = useState(false);

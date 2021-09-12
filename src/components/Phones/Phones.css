@@ -1,0 +1,158 @@
+.phones {
+    margin: 10px;
+    min-height: 92vh;
+}
+
+article.phoneMissions {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #28373E;
+    color: white;
+}
+
+article.phoneMissions .phoneCard {
+    display: flex;
+}
+
+article.phoneMissions .phoneMap {
+    width: 7%;
+}
+
+article.phoneMissions .phoneMap h1 {
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+article.phoneMissions .phoneMap img {
+    width: 100%;
+    cursor: pointer;
+}
+
+article.phoneMissions figure {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article.phoneMissions figure img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+article.phoneMissions .infoPhone {
+    background-color: #2E3D45;
+    width: 75%;
+    padding: 15px;
+}
+
+article.phoneMissions .infoPhone h1 {
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+}
+
+article.phoneMissions .infoPhone p {
+    margin-top: 20px;
+}
+
+article.phoneMissions .modalInvisible {
+    display: none;
+}
+
+article.phoneMissions .modalVisible {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+article.phoneMissions .modalVisible .modalMap {
+    background-color: #2E3D45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+article.phoneMissions .modalVisible .modalMap i {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+article.phoneMissions .modalVisible img {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+@keyframes openlist {
+    from {opacity: 0; filter: blur(20px);}
+    to {opacity: 1; filter: blur(0px);}
+}
+
+article.phoneMissions .phoneMissionList .phoneList {
+    animation-name: openlist;
+    animation-duration: 0.5s;
+    display: flex;
+    margin-top: 20px;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+    width: 20%;
+    margin: 10px;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+    background-color: #2E3D45;
+    font-family: 'Courgette', cursive;
+    color: white;
+    padding: 10px;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard p {
+    background-color: #2E3D45;
+    padding: 10px;
+}
+
+article.phoneMissions .phoneMissionList .phoneListNone {
+    display: none;
+}
+
+article.phoneMissions .phoneMissionList .openList {
+    display: flex;
+    justify-content: center;
+}
+
+article.phoneMissions .phoneMissionList .openList button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    top: 40px;
+    background-color: #E28F2D;
+    cursor: pointer;
+}
+
+article.phoneMissions .phoneMissionList .openList button:hover {
+    box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+    -webkit-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+    -moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+}
+
+.fa-grip-lines {
+    color: white;
+}

@@ -1,17 +1,25 @@
-import React from "react";
-import "./styles/App.css";
+import React, { useState } from "react";
+import "./App.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Maps from "./components/Maps";
-import ItemsGuns from "./components/ItemsGuns";
-import Bands from "./components/Bands";
-import Vehicles from "./components/Vehicles";
-import Missions from "./components/Missions";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
+import Maps from "./components/Maps/Maps";
+import ItemsGuns from "./components/Items/ItemsGuns";
+import Bands from "./components/Bands/Bands";
+import Vehicles from "./components/Vehicles/Vehicles";
+import Missions from "./components/Missions/Missions";
+import MissionsByOwner from "./components/MissionsByOwner/MissionsByOwner";
+import Phones from "./components/Phones/Phones";
+import RC from "./components/RC/RC";
+import R3 from "./components/R3/R3";
+
+import Context from "./Contexts/Context";
 
 function App() {
+  const [stateOwner, setOwner] = useState("");
+
   return (
       <div className="App">
         <Router>
@@ -32,7 +40,21 @@ function App() {
                 <Vehicles />
               </Route>
               <Route path="/missions">
-                <Missions />
+                <Missions owner={owner => setOwner(owner)} />
+              </Route>
+              <Route path="/missionowner">
+                <Context.Provider value={stateOwner}>
+                  <MissionsByOwner />
+                </Context.Provider>
+              </Route>
+              <Route path="/phones">
+                <Phones/>
+              </Route>
+              <Route path="/rc">
+                <RC/>
+              </Route>
+              <Route path="/r3">
+                <R3/>
               </Route>
               <Route path="/">
                 <Home />

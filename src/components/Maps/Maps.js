@@ -1,7 +1,7 @@
 import React from 'react';
-import map from "../assets/map.jpg";
+import map from "../../assets/maps/map.jpg";
 
-import "../styles/Maps.css";
+import "./Maps.css";
 
 function Maps() {
     return (

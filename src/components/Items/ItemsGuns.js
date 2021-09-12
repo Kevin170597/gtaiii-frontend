@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "../styles/ItemsGuns.css";
+import "./ItemsGuns.css";
 
-import Loading from "./Loading";
+import Loading from "../Loading/Loading";
 
 function ItemsGuns() {
     const [stateItems, setItems] = useState("");

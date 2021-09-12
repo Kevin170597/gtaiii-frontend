@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "../styles/Vehicles.css";
+import "./Vehicles.css";
 
-import Loading from "./Loading";
+import Loading from "../Loading/Loading";
 
 function Vehicles() {
     const [stateVehicles, setVehicles] = useState("");

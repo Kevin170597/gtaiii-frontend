@@ -1,0 +1,97 @@
+.rc4x4 {
+    margin: 10px;
+    min-height: 92vh;
+}
+
+.rc4x4 .rc, .container4x4 {
+    color: white;
+}
+
+.rc4x4 .rc .rcTitle, .container4x4 .title4x4 {
+    padding: 10px;
+}
+
+.rc4x4 .rc .rcDescription, .container4x4 .description4x4 {
+    padding: 5px;
+}
+
+.rc4x4 .rc .rcCards, .container4x4 .cards4x4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rc4x4 .rc .rcCards .rcLoading, .container4x4 .cards4x4 .Loading4x4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc4x4 .rc .rcCard, .container4x4 .card4x4 {
+    background-color: #28373E;
+    width: 22%;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rc4x4 .rc .rcCard figure, .container4x4 .card4x4 figure {
+    margin-top: 10px;
+}
+
+.rc4x4 .rc .rcCard figure img, .container4x4 .card4x4 figure img {
+    width: 100%;
+}
+
+.rc4x4 .rc .rcCard button, .container4x4 .card4x4 button {
+    background-color: rgb(199, 199, 199);
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.rc4x4 .rc .rcCard .rcModalNone, .container4x4 .card4x4 .ModalNone4x4 {
+    display: none;
+}
+
+.rc4x4 .rc .rcCard .rcModalContainer, .container4x4 .card4x4 .ModalContainer4x4 {
+    background-color: rgba(19, 18, 18, 0.438);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    right: 0%;
+}
+
+.rc4x4 .rc .rcCard .rcModalContainer .close, .container4x4 .card4x4 .ModalContainer4x4 .close {
+    background-color: #2E3D45;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.rc4x4 .rc .rcCard .rcModalContainer .close i {
+    display: flex;
+    align-items: flex-end;
+}
+
+.rc4x4 .rc .rcCard .rcModalContainer .modalMapRC, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: #2E3D45;
+}
+
+.rc4x4 .rc .rcCard .rcModalContainer .modalMapRC img, .container4x4 .card4x4 .ModalContainer4x4 img {
+    width: 80%;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,61 @@
+.r3 {
+    margin: 10px;
+    min-height: 92vh;
+}
+
+.r3 .r3Description {
+    color: white;
+    padding: 10px;
+}
+
+.r3 .r3Cards {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.r3 .r3Cards article {
+    background-color: #28373E;
+    width: 48%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.r3 .r3Cards article .r3Title {
+    width: 30%;
+}
+
+.r3 .r3Cards article .r3Title figure {
+    width: 100%;
+}
+
+.r3 .r3Cards article .r3Title figure img {
+    width: 100%;
+}
+
+.r3 .r3Cards article .r3Guide {
+    width: 70%;
+    padding: 10px;
+}
+
+.r3 .r3Cards article .r3Reward {
+    background-color: #2E3D45;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+.r3 .r3Cards article .r3Reward .r3RewardTitle {
+    width: 70%;
+}
+
+.r3 .r3Cards article .r3Reward .r3RewardImage {
+    width: 30%;
+    padding: 10px;
+}
+
+.r3 .r3Cards article .r3Reward .r3RewardImage img {
+    width: 80%;
+}
