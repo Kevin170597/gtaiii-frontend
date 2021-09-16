@@ -62,11 +62,11 @@ function Navbar() {
                     <div className={stateTip === 10 ? "tooltip " : "tooltipNone"}>Paquetes ocultos</div>
                 </article>
                 <article onMouseEnter={() => setTip(11)} onMouseLeave={() => setTip("tooltipNone")}>
-                    <NavLink to="/"><img src={jumps_icon} alt="icon"></img></NavLink>
+                    <NavLink to="/jumps"><img src={jumps_icon} alt="icon"></img></NavLink>
                     <div className={stateTip === 11 ? "tooltip " : "tooltipNone"}>Saltos únicos</div>
                 </article>
                 <article onMouseEnter={() => setTip(12)} onMouseLeave={() => setTip("tooltipNone")}>
-                    <NavLink to="/"><img src={garage_icon} alt="icon"></img></NavLink>
+                    <NavLink to="/garages"><img src={garage_icon} alt="icon"></img></NavLink>
                     <div className={stateTip === 12 ? "tooltip " : "tooltipNone"}>Garages exp/imp</div>
                 </article>
             </section>            

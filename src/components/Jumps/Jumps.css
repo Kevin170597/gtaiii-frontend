@@ -1,41 +1,42 @@
-.rampages {
+.jumps {
     margin: 10px;
     min-height: 92vh;
 }
 
-.rampages .rampageDescription {
+.jumps .jumpDescription {
     display: flex;
     color: white;
 }
 
-.rampages .rampageDescription .rampagesIcon {
+.jumps .jumpDescription .jumpIcon {
     width: 20%;
 }
 
-.rampages .rampageDescription .rampagesIcon figure {
+.jumps .jumpDescription .jumpIcon figure {
     display: flex;
     justify-content: center;
 }
 
-.rampages .rampageDescription .rampagesIcon figure img {
-    width: 40%;
+.jumps .jumpDescription .jumpIcon figure img {
+    width: 100%;
 }
 
-.rampages .rampageDescription .rampagesDescription {
-    width: 70%;
+.jumps .jumpDescription .jumpsDescription {
+    width: 60%;
+    padding-left: 20px;
 }
 
-.rampages .rampagesContainer {
+.jumps .jumpsContainer {
     display: flex;
     padding-top: 20px;
     color: white;
 }
 
-.rampages .rampagesContainer .rampagesMaps {
+.jumps .jumpsContainer .jumpsMaps {
     display: flex;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap {
     margin: 10px;
     background-color: #28373E;
     display: flex;
@@ -44,7 +45,7 @@
     padding: 10px;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampMapTooltipNone {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsMapTooltipNone {
     display: none;
 }
 
@@ -53,10 +54,8 @@
     to {opacity: 1; filter: blur(0px); height: 28px;}
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampMapTooltip {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsMapTooltip {
     background-color: #1D2930;
-    position: absolute;
-    top: 50%;
     height: 28px;
     padding-left: 10px;
     padding-right: 10px;
@@ -64,20 +63,20 @@
     animation-duration: 0.3s;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap figure {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap figure {
     width: 40%;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap figure img {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap figure img {
     width: 90%;
     cursor: pointer;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalNone {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalNone {
     display: none;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer {
     position: fixed;
     right: 0%;
     top: 0%;
@@ -90,7 +89,7 @@
     z-index: 2;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal {
     width: 40%;
     background-color: #2E3D45;
     display: flex;
@@ -99,7 +98,7 @@
     align-items: center;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal i {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal i {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -107,20 +106,20 @@
     cursor: pointer;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal i:hover {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal i:hover {
     color: #E28F2D;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal img {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal img {
     width: 80%;
     margin-bottom: 15px;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .rampageInfo {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsInfo {
     width: 70%;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .openRampage {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .openJumps {
     width: 100%;
     height: 20px;
     display: flex;
@@ -129,7 +128,7 @@
     top: 2%;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .openRampage button {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .openJumps button {
     width: 50px;
     height: 50px;
     border: none;
@@ -138,13 +137,13 @@
     cursor: pointer;
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .openRampage button:hover {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .openJumps button:hover {
     box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
     -webkit-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
     -moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
 }
 
-.rampages .rampagesContainer .rampagesMaps .rampageMap .openRampage button a {
+.jumps .jumpsContainer .jumpsMaps .jumpsMap .openJumps button a {
     display: block;
     width: 50px;
     height: 50px;
@@ -156,32 +155,22 @@
     text-decoration: none;
 }
 
-section.rampagesList {
+section.jumpsList {
     color: white;
     margin-top: 20px;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-section.rampagesList .rampagesCard {
+section.jumpsList .jumpsCard {
     background-color: #28373E;
     margin-bottom: 10px;
-    display: flex;
     padding: 10px;
+    width: 20%;
 }
 
-section.rampagesList .rampagesCard .rampageCardInfo {
-    width: 18%;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-section.rampagesList .rampagesCard .location {
-    display: flex;
-    background-color: #2E3D45;
-    width: 41%;
-    padding: 10px;
-}
-
-section.rampagesList .rampagesCard .location figure {
-    margin-right: 20px;
+section.jumpsList .jumpsCard figure img {
+    width: 100%;
 }

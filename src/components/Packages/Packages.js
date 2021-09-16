@@ -50,7 +50,6 @@ function Packages() {
                 </div>
                 <div className="packageDescription">
                     <p>Por todo Liberty City hay repartidos un total de 100 paquetes, ocultos en los lugares más reconditos de las 3 islas. Su recolección es vital para conseguir el 100% del juego, y por cada 10 paquetes que consigamos recibiremos un premio en forma de arma o item en nuestros escondites. Cuando tengamos los 100 se nos recompensará con 1.000.000$.</p>
-                    
                 </div>
             </section>
             <section className="packagesRewards">

@@ -16,6 +16,8 @@ import RC from "./components/RC/RC";
 import R3 from "./components/R3/R3";
 import Rampages from "./components/Rampages/Rampage";
 import Packages from "./components/Packages/Packages";
+import Jumps from "./components/Jumps/Jumps";
+import Garages from "./components/Garages/Garages";
 
 import Context from "./Contexts/Context";
 
@@ -63,6 +65,12 @@ function App() {
               </Route>
               <Route path="/packages">
                 <Packages />
+              </Route>
+              <Route path="/jumps">
+                <Jumps />
+              </Route>
+              <Route path="/garages">
+                <Garages />
               </Route>
               <Route path="/">
                 <Home />

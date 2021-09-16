@@ -162,6 +162,12 @@
     cursor: pointer;
 }
 
+.packages .packagesContainer .packagesMaps .packageMap .openPackage button:hover {
+    box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+    -webkit-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+    -moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+}
+
 .packages .packagesContainer .packagesMaps .packageMap .openPackage button a {
     display: block;
     width: 50px;
