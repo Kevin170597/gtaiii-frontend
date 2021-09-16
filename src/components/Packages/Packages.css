@@ -1,0 +1,195 @@
+.packages {
+    margin: 10px;
+    min-height: 92vh;
+}
+
+.packages .packagesDescription {
+    display: flex;
+    color: white;
+}
+
+.packages .packagesDescription .packageIcon {
+    width: 20%;
+}
+
+.packages .packagesDescription .packageIcon figure {
+    display: flex;
+    justify-content: center;
+}
+
+.packages .packagesDescription .packageIcon figure img {
+    width: 40%;
+}
+
+.packages .packagesDescription .packageDescription {
+    width: 70%;
+}
+
+.packages section.packagesRewards {
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.packages section.packagesRewards h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.packages section.packagesRewards ul {
+    display: flex;
+    justify-content: center;
+}
+
+.packages section.packagesRewards ul li {
+    width: 10%;
+    list-style: none;
+    text-align: center;
+}
+
+.packages section.packagesRewards ul li img {
+    width: 70%;
+}
+
+.packages .packagesContainer {
+    display: flex;
+    padding-top: 20px;
+    color: white;
+}
+
+.packages .packagesContainer .packagesMaps {
+    display: flex;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap {
+    margin: 10px;
+    background-color: #28373E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageMapTooltipNone {
+    display: none;
+}
+
+@keyframes tooltipBlur {
+    from {opacity: 0; filter: blur(5px); height: 0px;}
+    to {opacity: 1; filter: blur(0px); height: 28px;}
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageMapTooltip {
+    background-color: #1D2930;
+    height: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-name: tooltipBlur;
+    animation-duration: 0.3s;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap figure {
+    width: 40%;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap figure img {
+    width: 90%;
+    cursor: pointer;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageModalNone {
+    display: none;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageModalContainer {
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.534);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal {
+    width: 40%;
+    background-color: #2E3D45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal i {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal i:hover {
+    color: #E28F2D;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal img {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .packageInfo {
+    width: 70%;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .openPackage {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 2%;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .openPackage button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #E28F2D;
+    cursor: pointer;
+}
+
+.packages .packagesContainer .packagesMaps .packageMap .openPackage button a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+}
+
+section.packagesList {
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.packagesList .packagesCard {
+    background-color: #28373E;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 20%;
+}
+
+section.packagesList .packagesCard figure img {
+    width: 100%;
+}

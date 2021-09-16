@@ -54,11 +54,11 @@ function Navbar() {
                     <div className={stateTip === 8 ? "tooltip " : "tooltipNone"}>Misiones R3</div>
                 </article>
                 <article onMouseEnter={() => setTip(9)} onMouseLeave={() => setTip("tooltipNone")}>
-                    <NavLink to="/"><img src={rampage_icon} alt="icon"></img></NavLink>
+                    <NavLink to="/rampages"><img src={rampage_icon} alt="icon"></img></NavLink>
                     <div className={stateTip === 9 ? "tooltip " : "tooltipNone"}>Masacres</div>
                 </article>
                 <article onMouseEnter={() => setTip(10)} onMouseLeave={() => setTip("tooltipNone")}>
-                    <NavLink to="/"><img src={package_icon} alt="icon"></img></NavLink>
+                    <NavLink to="/packages"><img src={package_icon} alt="icon"></img></NavLink>
                     <div className={stateTip === 10 ? "tooltip " : "tooltipNone"}>Paquetes ocultos</div>
                 </article>
                 <article onMouseEnter={() => setTip(11)} onMouseLeave={() => setTip("tooltipNone")}>

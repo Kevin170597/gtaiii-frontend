@@ -14,6 +14,8 @@ import MissionsByOwner from "./components/MissionsByOwner/MissionsByOwner";
 import Phones from "./components/Phones/Phones";
 import RC from "./components/RC/RC";
 import R3 from "./components/R3/R3";
+import Rampages from "./components/Rampages/Rampage";
+import Packages from "./components/Packages/Packages";
 
 import Context from "./Contexts/Context";
 
@@ -55,6 +57,12 @@ function App() {
               </Route>
               <Route path="/r3">
                 <R3/>
+              </Route>
+              <Route path="/rampages">
+                <Rampages/>
+              </Route>
+              <Route path="/packages">
+                <Packages />
               </Route>
               <Route path="/">
                 <Home />
