@@ -137,7 +137,7 @@ function Packages() {
             <section className="packagesList" id="list">
                 {statePackages &&
                     statePackages.map((packages) => 
-                        <div className="packagesCard">
+                        <div className="packagesCard" key={packages.id}>
                             <p>Paquete {packages.id}</p>
                             <figure>
                                 <img src={packages.screen} alt="package"></img>

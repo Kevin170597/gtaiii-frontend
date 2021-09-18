@@ -33,7 +33,7 @@ function RC() {
                 <div className="rcCards">
                     {stateRC &&
                         stateRC.map((rc) =>
-                            <div className="rcCard">
+                            <div className="rcCard" key={rc.id}>
                                 <h4>{rc.name}</h4>
                                 <figure>
                                     <img src={rc.screen} alt=""></img>
@@ -65,7 +65,7 @@ function RC() {
                 <div className="cards4x4">
                     {state4x4 &&
                         state4x4.map((e) =>
-                            <div className="card4x4">
+                            <div className="card4x4" key={e.id}>
                                 <h4>{e.name}</h4>
                                 <figure>
                                     <img src={e.screen} alt=""></img>

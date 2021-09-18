@@ -26,7 +26,7 @@ function MissionsByOwner() {
                 <section className="missionsList">
                     {stateMission &&
                         stateMission.map((mission) => 
-                            <div className="listCards">
+                            <div className="listCards" key={mission.id}>
                                 <div className="missionInfo">
                                     <h1>{mission.name}</h1>
                                     <p>{mission.city}</p>

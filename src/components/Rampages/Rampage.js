@@ -113,7 +113,7 @@ function Rampage() {
             <section className="rampagesList" id="list">
                 {stateRampages &&
                     stateRampages.map((rampage) =>
-                        <div className="rampagesCard">
+                        <div className="rampagesCard" key={rampage.id}>
                             <div className="rampageCardInfo">
                                 <h2>Masacre {rampage.name}</h2>
                                 <p>Ciudad: {rampage.city}</p>
