@@ -49,3 +49,30 @@
     width: 80%;
     padding-left: 10px;
 }
+
+@media (max-width: 480px) {
+    .missionsByOwner .missionsContainer {
+        flex-direction: column;
+    }
+
+    .missionsByOwner .missionsContainer figure {
+        width: 100%;
+    }
+
+    .missionsByOwner .missionsContainer figure img {
+        width: 30%;
+    }
+
+    .missionsByOwner .missionsContainer .missionsList {
+        width: 100%;
+    }
+
+    .missionsByOwner .missionsContainer .missionsList .listCards {
+        flex-direction: column;
+    }
+
+    .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

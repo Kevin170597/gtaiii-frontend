@@ -16,7 +16,6 @@ section.bandsTitle h1 {
 
 section.cardsContainer {
     display: flex;
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -25,22 +24,8 @@ section.cardsContainer article {
     margin: 8px;
 }
 
-@keyframes shadow {
-    from {box-shadow: none;}
-    to {
-        box-shadow: -4px 6px 42px -12px rgba(192,163,1,0.62);
--webkit-box-shadow: -4px 6px 42px -12px rgba(192,163,1,0.62);
--moz-box-shadow: -4px 6px 42px -12px rgba(192,163,1,0.62);
-    }
-}
-
 section.cardsContainer article:hover {
-    animation-name: shadow;
     cursor: pointer;
-    animation-duration: 0.2s;
-    box-shadow: -4px 6px 42px -12px rgba(192,163,1,0.62);
--webkit-box-shadow: -4px 6px 42px -12px rgba(192,163,1,0.62);
--moz-box-shadow: -4px 6px 42px -12px rgba(192,163,1,0.62);
 }
 
 section.cardsContainer article h4 {
@@ -187,4 +172,55 @@ figure.car .sunImage {
     width: 80%;
     position: relative;
     top: 10%;
+}
+
+@media (max-width: 480px) {
+    section.cardsContainer article {
+        width: 46%;
+        margin: 4px;
+    }
+
+    section.modalHeader {
+        height: 8%;
+    }
+
+    section.cardsContainer .modal .modalCard {
+        width: 90%;
+        height: 80%;
+    }
+
+    section.modalInfo {
+        flex-wrap: wrap;
+    }
+
+    section.cardsContainer article.bandlogo {
+        width: 60%;
+        margin: 0;
+        padding: 15px;
+    }
+
+    figure.member {
+        width: 40%;
+        align-items: flex-start;
+        height: 50%;
+    }
+
+    figure.member img {
+        width: 90%;
+    }
+
+    figure.car {
+        width: 100%;
+        height: 20%;
+    }
+
+    figure.car .carImage {
+        width: 70%;
+        bottom: 200%;
+    }
+
+    figure.car .sunImage {
+        width: 60%;
+        top: -30%;
+    }
 }

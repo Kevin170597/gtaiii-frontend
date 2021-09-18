@@ -59,3 +59,10 @@
 .r3 .r3Cards article .r3Reward .r3RewardImage img {
     width: 80%;
 }
+
+@media (max-width: 480px) {
+    .r3 .r3Cards article {
+        width: 100%;
+        margin: 5px;
+    }
+}

@@ -41,6 +41,33 @@ section.missionsMaps .mapAndIcons {
     align-items: center;
 }
 
+@media (max-width: 480px) {
+    section.missionsMaps {
+        flex-direction: column;
+    }
+
+    section.missionsMaps h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+
+    section.missionsMaps .mapAndIcons {
+        justify-content: center;
+    }
+}
+
 @keyframes mapBlur {
     from {opacity: 0; filter: blur(20px);}
     to {opacity: 1; filter: blur(0px);}

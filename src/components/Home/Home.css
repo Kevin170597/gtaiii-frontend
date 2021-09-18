@@ -2,7 +2,7 @@
 
 section.home {
     width: 100%;
-    height: 92vh;
+    min-height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,5 +56,39 @@ article.claude {
 }
 
 article.claude img {
-    height: 90%;
+    width: 60%;
+}
+
+@media (max-width: 480px) {
+    section.home {
+        min-height: 92vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    article.cover {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    article.cover img {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    article.introduction {
+        width: 100%;
+        padding: 10px 30px 20px 30px;
+    }
+
+    article.claude {
+        width: 100%;
+    }
+
+    article.claude img {
+        width: 40%;
+    }
 }

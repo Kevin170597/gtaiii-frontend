@@ -156,3 +156,37 @@ article.phoneMissions .phoneMissionList .openList button:hover {
 .fa-grip-lines {
     color: white;
 }
+
+@media (max-width: 480px) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+
+    article.phoneMissions .phoneMap {
+        width: 40%;
+    }
+
+    article.phoneMissions figure {
+        width: 60%;
+    }
+    
+    article.phoneMissions .infoPhone {
+        width: 100%;
+    }
+
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+
+    article.phoneMissions .phoneMissionList .phoneList {
+        flex-direction: column;
+    }
+
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+    }
+}

@@ -36,7 +36,7 @@
 }
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap {
-    margin: 10px;
+    margin: 20px;
     background-color: #28373E;
     display: flex;
     align-items: center;
@@ -184,4 +184,50 @@ section.rampagesList .rampagesCard .location {
 
 section.rampagesList .rampagesCard .location figure {
     margin-right: 20px;
+}
+
+@media (max-width: 480px) {
+    .rampages .rampageDescription {
+        flex-direction: column;
+    }
+
+    .rampages .rampageDescription .rampagesIcon {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rampages .rampageDescription .rampagesIcon figure img {
+        width: 20%;
+    }
+
+    .rampages .rampageDescription .rampagesDescription {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .rampages .rampagesContainer .rampagesMaps  {
+        flex-direction: column;
+    }
+
+    section.rampagesList .rampagesCard {
+        flex-direction: column;
+    }
+
+    section.rampagesList .rampagesCard .rampageCardInfo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section.rampagesList .rampagesCard .location {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal {
+        width: 90%;
+    }
+
+    .rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal img {
+        width: 96%;
+    }
 }

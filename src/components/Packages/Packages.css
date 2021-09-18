@@ -199,3 +199,52 @@ section.packagesList .packagesCard {
 section.packagesList .packagesCard figure img {
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    .packages .packagesDescription {
+        flex-direction: column;
+    }
+
+    .packages .packagesDescription .packageIcon {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .packages .packagesDescription .packageIcon figure img {
+        width: 20%;
+    }
+
+    .packages .packagesDescription .packageDescription {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .packages section.packagesRewards ul {
+        flex-wrap: wrap;
+    }
+
+    .packages section.packagesRewards ul li {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+
+    .packages .packagesContainer .packagesMaps {
+        flex-direction: column;
+    }
+
+    .packages .packagesContainer .packagesMaps .packageMap {
+        margin-bottom: 30px;
+    }
+
+    .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal {
+        width: 90%;
+    }
+
+    .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal img {
+        width: 96%;
+    }
+
+    section.packagesList .packagesCard {
+        width: 50%;
+    }
+}

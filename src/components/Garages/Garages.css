@@ -168,3 +168,42 @@ article.garagelist .carsList .openList button:hover {
 .fa-grip-lines {
     color: white;
 }
+
+@media (max-width: 480px) {
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+
+    article.garagelist .garageMap {
+        width: 40%;
+    }
+
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+
+    article.garagelist figure {
+        width: 60%;
+    }
+
+    article.garagelist .infoGarage {
+        width: 100%;
+    }
+
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+
+    article.garagelist .modalVisible img {
+        width: 96%;
+    }
+    
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 30%;
+        margin: 3px;
+    }
+}

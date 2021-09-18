@@ -1,6 +1,5 @@
 nav {
     width: 5%;
-    
 }
 
 nav section {
@@ -13,13 +12,26 @@ nav section {
     position: fixed;
 }
 
+nav section.burger {
+    display: none;
+}
+
+nav section article.closeMobile {
+    display: none;
+}
+
 nav section article {
     width: 100%;
     height: 6%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3px;
+}
+
+nav section article p {
+    display: none;
 }
 
 nav section article a {
@@ -75,4 +87,67 @@ nav section a:hover {
     box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
     -webkit-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
     -moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: 0%;
+    }
+
+    nav section.navLinks {
+        display: none;
+    }
+
+    @keyframes openMobile {
+        from {width: 0%; height: 0%;}
+        to {width: 100%; height: 50vh;}
+    }
+
+    nav section.navLinks2 {
+        background-color: #19272e;
+        width: 100%;
+        height: 50vh;
+        flex-direction: row;
+        flex-wrap: wrap;
+        animation-name: openMobile;
+        animation-duration: 0.3s;
+        z-index: 2;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 30px;
+    }
+
+    nav section.navLinks2 article.closeMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        height: 10%;
+        color: white;
+        padding-right: 20px;
+    }
+
+    nav section article {
+        width: 25%;
+        height: 30%;
+        margin: 0;
+    }
+
+    nav section article p {
+        display: block;
+        color: white;
+    }
+
+    nav section article a img {
+        width: 40%;
+    }
+
+    nav section.burger {
+        width: 10%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
 }

@@ -36,6 +36,12 @@
     flex-direction: column;
 }
 
+@media (max-width: 480px) {
+    .rc4x4 .rc .rcCard, .container4x4 .card4x4 {
+        width: 45%;
+    }
+}
+
 .rc4x4 .rc .rcCard figure, .container4x4 .card4x4 figure {
     margin-top: 10px;
 }
@@ -94,4 +100,26 @@
 .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC img, .container4x4 .card4x4 .ModalContainer4x4 img {
     width: 80%;
     margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .rc4x4 .rc .rcCard, .container4x4 .card4x4 {
+        width: 47%;
+    }
+
+    .rc4x4 .rc .rcCard button, .container4x4 .card4x4 button {
+        height: 33px;
+    }
+
+    .rc4x4 .rc .rcCard .rcModalContainer .close, .container4x4 .card4x4 .ModalContainer4x4 .close {
+        width: 90%;
+    }
+
+    .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 {
+        width: 90%;
+    }
+
+    .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC img, .container4x4 .card4x4 .ModalContainer4x4 img {
+        width: 96%;
+    }
 }

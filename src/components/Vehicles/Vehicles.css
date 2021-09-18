@@ -25,6 +25,13 @@ section.vehiclesTitle h1 {
     cursor: pointer;
 }
 
+@media (max-width: 480px) {
+    .vehiclesContainer .vehicles .vehicleCard {
+        width: 30%;
+        margin: 5px;
+    }
+}
+
 .vehiclesContainer .vehicles .vehicleCard .vehicleImage {
     background-color: #28373E;
     width: 100%;

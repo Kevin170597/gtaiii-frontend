@@ -174,3 +174,42 @@ section.jumpsList .jumpsCard {
 section.jumpsList .jumpsCard figure img {
     width: 100%;
 }
+
+@media (max-width: 480px) {
+    .jumps .jumpDescription {
+        flex-direction: column;
+    }
+
+    .jumps .jumpDescription .jumpIcon {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .jumps .jumpDescription .jumpIcon figure img {
+        width: 60%;
+    }
+
+    .jumps .jumpDescription .jumpsDescription {
+        width: 100%;
+    }
+
+    .jumps .jumpsContainer .jumpsMaps {
+        flex-direction: column;
+    }
+
+    .jumps .jumpsContainer .jumpsMaps .jumpsMap {
+        margin-bottom: 30px;
+    }
+
+    .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal {
+        width: 90%;
+    }
+
+    .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal img {
+        width: 96%;
+    }
+
+    section.jumpsList .jumpsCard {
+        width: 50%;
+    }
+}

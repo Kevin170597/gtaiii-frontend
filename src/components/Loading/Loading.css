@@ -2,8 +2,15 @@
     display: flex;
     justify-content: center;
     height: 82vh;
+    width: 100%;
 }
 
 .loadingContainer img {
-    height: 90%;
+    height: 100%;
+}
+
+@media (max-width: 480px) {
+    .loadingContainer img {
+        height: 50%;
+    }
 }

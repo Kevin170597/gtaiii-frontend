@@ -79,7 +79,7 @@ function Jumps() {
                         </div>
                         <div className="jumpsInfo">
                             <h3>Saltos únicos de Staunton Island</h3>
-                            <p>8 saltos</p>
+                            <p>4 saltos</p>
                         </div>
                         <div className="openJumps">
                             <button onClick={() => getJumps("Staunton Island")}><a href="#list"><i className="fas fa-grip-lines"></i></a></button>

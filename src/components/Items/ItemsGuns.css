@@ -109,3 +109,21 @@ section.itemsTitle h1 {
 .itemsContainer .guns .gunsCards .gunInfo p {
     color: white;
 }
+
+@media (max-width: 480px) {
+    .itemsContainer {
+        flex-direction: column;
+    }
+
+    .itemsContainer .items {
+        width: 100%;
+    }
+
+    .itemsContainer .guns {
+        width: 100%;
+    }
+
+    .itemsContainer .guns .gunsCards {
+        width: 45%;
+    }
+}
