@@ -114,7 +114,7 @@ nav section a:hover {
         z-index: 2;
         align-items: flex-start;
         justify-content: flex-start;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     nav section.navLinks2 article.closeMobile {
@@ -143,11 +143,16 @@ nav section a:hover {
     }
 
     nav section.burger {
-        width: 10%;
+        width: 12%;
         height: 8vh;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
+    }
+
+    nav section.burger i {
+        color: rgb(230, 223, 223);
+        font-size: 30px;
     }
 }

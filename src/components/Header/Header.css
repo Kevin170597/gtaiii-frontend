@@ -35,20 +35,6 @@ section.contact {
     align-items: center;
 }
 
-@media (max-width: 480px) {
-    header {
-        justify-content: flex-end
-    }
-
-    section.logo {
-        width: 20%;
-    }
-
-    section.title {
-        width: 60%;
-    }
-}
-
 section.contact i {
     font-size: 30px;
     color: rgb(192, 192, 192);
@@ -104,4 +90,22 @@ article.contactCardVisible a {
 article.contactCardVisible a i {
     font-size: 15px;
     margin-right: 5px;
+}
+
+@media (max-width: 480px) {
+    header {
+        justify-content: flex-end
+    }
+
+    section.logo {
+        width: 20%;
+    }
+
+    section.title {
+        width: 50%;
+    }
+    
+    section.contact {
+        width: 20%;
+    }
 }

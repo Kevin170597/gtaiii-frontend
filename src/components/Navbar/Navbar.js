@@ -23,7 +23,7 @@ function Navbar() {
     return (
         <nav>
             <section onClick={() => setMenu(!stateMenu)} className="burger">
-                <i className="fas fa-grip-lines"></i>
+                <i className="fas fa-bars"></i>
             </section>
             <section className={stateMenu ? "navLinks" : "navLinks2"}>
                 <article className="closeMobile" onClick={() => setMenu(!stateMenu)}>
