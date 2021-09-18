@@ -115,8 +115,8 @@
 }
 
 .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal {
-    width: 40%;
-    background-color: #2E3D45;
+    width: 30%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +127,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 0px 0px 10px 0px;
     cursor: pointer;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal img {
-    width: 80%;
+    height: 80%;
     margin-bottom: 15px;
 }
 
@@ -242,6 +242,7 @@ section.packagesList .packagesCard figure img {
 
     .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal img {
         width: 96%;
+        height: auto;
     }
 
     section.packagesList .packagesCard {

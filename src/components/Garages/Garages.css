@@ -88,24 +88,24 @@ article.garagelist .modalVisible {
 }
 
 article.garagelist .modalVisible .modalMap {
-    background-color: #2E3D45;
+    width: 30%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
 }
 
 article.garagelist .modalVisible .modalMap i {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 0px 0px 10px 0px;
     cursor: pointer;
 }
 
 article.garagelist .modalVisible img {
-    width: 80%;
+    height: 80%;
     margin-bottom: 15px;
 }
 
@@ -200,6 +200,7 @@ article.garagelist .carsList .openList button:hover {
 
     article.garagelist .modalVisible img {
         width: 96%;
+        height: auto;
     }
     
     article.garagelist .carsList .garageList .vehiclesCard {

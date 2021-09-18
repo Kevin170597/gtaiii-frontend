@@ -47,18 +47,12 @@ figure.logoContainer img {
     width: 70%;
 }
 
-@keyframes backdrop {
-    from {background: none;}
-    to {background-color: rgba(19, 18, 18, 0.438);}
-}
-
 section.cardsContainer .modalNone {
     display: none;
 }
 
 section.cardsContainer .modal {
-    background-color: rgba(19, 18, 18, 0.438);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.534);
     position: absolute;
     height: 100%;
     bottom: 0%;
@@ -67,8 +61,6 @@ section.cardsContainer .modal {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: backdrop;
-    animation-duration: 0.1s;
 }
 
 section.cardsContainer .modal .modalCard {

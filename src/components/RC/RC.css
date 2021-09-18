@@ -64,7 +64,7 @@
 }
 
 .rc4x4 .rc .rcCard .rcModalContainer, .container4x4 .card4x4 .ModalContainer4x4 {
-    background-color: rgba(19, 18, 18, 0.438);
+    background-color: rgba(0, 0, 0, 0.534);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,29 +76,25 @@
     right: 0%;
 }
 
-.rc4x4 .rc .rcCard .rcModalContainer .close, .container4x4 .card4x4 .ModalContainer4x4 .close {
-    background-color: #2E3D45;
-    width: 40%;
-    padding: 10px;
+.rc4x4 .rc .rcCard .rcModalContainer .modalMapRC, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rc4x4 .rc .rcCard .rcModalContainer .modalMapRC i, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 i {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
+    padding: 0px 0px 10px 0px;
     cursor: pointer;
 }
 
-.rc4x4 .rc .rcCard .rcModalContainer .close i {
-    display: flex;
-    align-items: flex-end;
-}
-
-.rc4x4 .rc .rcCard .rcModalContainer .modalMapRC, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    background-color: #2E3D45;
-}
-
 .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC img, .container4x4 .card4x4 .ModalContainer4x4 img {
-    width: 80%;
+    height: 85%;
     margin-bottom: 20px;
 }
 
@@ -121,5 +117,6 @@
 
     .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC img, .container4x4 .card4x4 .ModalContainer4x4 img {
         width: 96%;
+        height: auto;
     }
 }

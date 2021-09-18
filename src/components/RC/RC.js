@@ -40,8 +40,8 @@ function RC() {
                                 </figure>
                                 <button onClick={() => {setModalRC(rc.id)}}>Ver ubicacón</button>
                                 <div className={stateModalRC === rc.id ? "rcModalContainer" : "rcModalNone"}>
-                                    <div className="close"><i onClick={() => {setModalRC("rcModalNone")}} className="fas fa-times"></i></div>
                                     <div className="modalMapRC">
+                                        <i onClick={() => {setModalRC("rcModalNone")}} className="fas fa-times"></i>
                                         <img src={rc.map} alt=""></img>
                                     </div>
                                 </div>
@@ -72,8 +72,8 @@ function RC() {
                                 </figure>
                                 <button onClick={() => setModal4x4(e.id)}>Ver ubicación</button>
                                 <div className={stateModal4x4 === e.id ? "ModalContainer4x4" : "ModalNone4x4"}>
-                                    <div className="close"><i onClick={() => {setModal4x4("rcModalNone")}} className="fas fa-times"></i></div>
                                     <div className="modalMap4x4">
+                                        <i onClick={() => {setModal4x4("rcModalNone")}} className="fas fa-times"></i>
                                         <img src={e.map} alt=""></img>
                                     </div>
                                 </div>

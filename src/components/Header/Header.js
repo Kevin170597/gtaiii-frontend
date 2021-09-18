@@ -20,7 +20,7 @@ function Header() {
             <section className="contact">
                 <i onClick={() => setContact(!stateContact)} className="far fa-envelope"></i>
                 <article className={stateContact ? "contactCardVisible" : "contactCardInvisible"}>
-                    <h4>Contact me</h4>
+                    <h4>Contacto</h4>
                     <p>kevin170597@gmail.com</p>
                     <a href="https://www.instagram.com/kevin170597/"><i className="fab fa-instagram"></i>Kevin170597</a>
                     <a href="https://github.com/Kevin170597"><i className="fab fa-github"></i>Github</a>

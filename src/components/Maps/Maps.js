@@ -6,7 +6,12 @@ import "./Maps.css";
 function Maps() {
     return (
         <section className="maps">
-            <img src={map} alt="map"></img>
+            <section className="missionsTitle">
+                <h1>Mapa de Liberty City</h1>
+            </section>
+            <section className="officialMap">
+                <img src={map} alt="map"></img>
+            </section>
         </section>
     )
 }

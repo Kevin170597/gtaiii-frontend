@@ -78,23 +78,23 @@ article.phoneMissions .modalVisible {
 }
 
 article.phoneMissions .modalVisible .modalMap {
-    background-color: #2E3D45;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
+    height: 100vh;
 }
 
 article.phoneMissions .modalVisible .modalMap i {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 0px 0px 10px 0px;
 }
 
 article.phoneMissions .modalVisible img {
-    width: 80%;
+    height: 85%;
     margin-bottom: 15px;
 }
 
@@ -174,10 +174,6 @@ article.phoneMissions .phoneMissionList .openList button:hover {
         width: 100%;
     }
 
-    article.phoneMissions .modalVisible .modalMap {
-        width: 90%;
-    }
-
     article.phoneMissions .phoneMissionList .phoneList {
         flex-direction: column;
     }
@@ -186,7 +182,12 @@ article.phoneMissions .phoneMissionList .openList button:hover {
         width: 100%;
     }
 
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+
     article.phoneMissions .modalVisible img {
         width: 96%;
+        height: auto;
     }
 }
