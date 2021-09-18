@@ -75,7 +75,6 @@ function App() {
               <Route path="/">
                 <Home />
               </Route>
-              <Route component={Home}/>
             </Switch>
           </div>
         </Router>
