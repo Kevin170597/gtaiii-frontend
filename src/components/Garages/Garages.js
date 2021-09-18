@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import "./Garages.css";
 
-import jumping from "../../assets/jump.png";
-
 import Portland1 from "../../assets/garages/map_portland.png";
 import Portland2 from "../../assets/garages/map_portland_2.png";
 import Shoreside from "../../assets/garages/map_shoreside.png";
