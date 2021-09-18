@@ -12,6 +12,14 @@ nav section {
     position: fixed;
 }
 
+nav section article.topBorder {
+    border-radius: 15px 15px 0 0;
+}
+
+nav section article.bottomBorder {
+    border-radius: 0 0 15px 15px;
+}
+
 nav section.burger {
     display: none;
 }
@@ -21,13 +29,15 @@ nav section article.closeMobile {
 }
 
 nav section article {
-    width: 100%;
-    height: 6%;
+    width: 80%;
+    height: 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3px;
+    margin: 0px;
+    background-color: #000000;
+    
 }
 
 nav section article p {
@@ -35,7 +45,7 @@ nav section article p {
 }
 
 nav section article a {
-    width: 60%;
+    width: 80%;
     height: 100%;
     color: white;
 }
@@ -70,9 +80,9 @@ nav section a {
     justify-content: center;
     align-items: center;
     height: 6%;
-    border-radius: 5px;
+    border-radius: 50%;
     width: 60%;
-    margin: 3px;
+    margin: 0px;
 }
 
 @keyframes linksBlur {
@@ -89,7 +99,7 @@ nav section a:hover {
     -moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     nav {
         width: 0%;
     }

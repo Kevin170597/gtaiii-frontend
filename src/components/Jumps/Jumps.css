@@ -175,7 +175,7 @@ section.jumpsList .jumpsCard figure img {
     width: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .jumps .jumpDescription {
         flex-direction: column;
     }

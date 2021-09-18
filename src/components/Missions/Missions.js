@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Missions.css";
 
-import shoreside from "../../assets/maps/map_shoreside_vale_1.png";
-import staunton from "../../assets/maps/map_staunton_island_1.png";
-import portland from "../../assets/maps/map_portland_1.png";
+import shoreside from "../../assets/maps/map_shoreside_vale_2.png";
+import staunton from "../../assets/maps/map_staunton_island_2.png";
+import portland from "../../assets/maps/map_portland_2.png";
 
 import luigi from "../../assets/missions_icons/luigi_icon.png";
 import joey from "../../assets/missions_icons/joey_icon.png";
@@ -26,9 +26,9 @@ function Missions(props) {
             </section>
             <section className="missionsMaps">
                 <div className="shoreside">
-                    <h2>Misiones de Shoreside Vale</h2>
+                    <h3>Misiones de Shoreside Vale</h3>
                     <div className="mapAndIcons">
-                        <img onClick={() => setIcon(1)} src={shoreside} alt="portland"></img>
+                        <img onMouseEnter={() => setIcon(1)} src={shoreside} alt="portland"></img>
                         <ul className={stateIcon === 1 ? "icons" : "iconsNone"}>
                             <li>
                                 <NavLink to="/missionowner" onClick={() => props.owner({name:"Donald Love II", image:"https://raw.githubusercontent.com/Kevin170597/gtaiii-images/master/misions/staunton_donald_love.png"})}>
@@ -58,9 +58,9 @@ function Missions(props) {
                     </div>
                 </div>
                 <div className="staunton">
-                    <h2>Misiones de Staunton Island</h2>
+                    <h3>Misiones de Staunton Island</h3>
                     <div className="mapAndIcons">
-                        <img onClick={() => setIcon(2)} src={staunton} alt="portland"></img>
+                        <img onMouseEnter={() => setIcon(2)} src={staunton} alt="portland"></img>
                         <ul className={stateIcon === 2 ? "icons" : "iconsNone"}>
                             <li>
                                 <NavLink to="/missionowner" onClick={() => props.owner({name:"Asuka Kasen", image:"https://raw.githubusercontent.com/Kevin170597/gtaiii-images/master/misions/staunton_asuka_kasen.png"})}>
@@ -90,9 +90,9 @@ function Missions(props) {
                     </div>
                 </div>
                 <div className="portland">
-                    <h2>Misiones de Portland</h2>
+                    <h3>Misiones de Portland</h3>
                     <div className="mapAndIcons">
-                        <img onClick={() => setIcon(3)} src={portland} alt="portland"></img>
+                        <img onMouseEnter={() => setIcon(3)} src={portland} alt="portland"></img>
                         <ul className={stateIcon === 3 ? "icons" : "iconsNone"}>
                             <li>
                                 <NavLink to="/missionowner" onClick={() => props.owner({name:"Luigi Goterelli", image:"https://raw.githubusercontent.com/Kevin170597/gtaiii-images/master/misions/portland_luigi.png"})}>

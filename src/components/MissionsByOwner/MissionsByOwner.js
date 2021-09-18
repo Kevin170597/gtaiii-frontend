@@ -29,9 +29,9 @@ function MissionsByOwner() {
                             <div className="listCards" key={mission.id}>
                                 <div className="missionInfo">
                                     <h1>{mission.name}</h1>
-                                    <p>{mission.city}</p>
-                                    <p>Recompensa: ${mission.reward}</p>
-                                    <p>Objetivo: {mission.objective}</p>
+                                    <p className="cityTag">{mission.city}</p>
+                                    <p className="rewardTag">Recompensa: ${mission.reward}</p>
+                                    <p className="objectiveTag">Objetivo: {mission.objective}</p>
                                 </div>
                                 <div className="guide">
                                     <h1>Guía</h1>

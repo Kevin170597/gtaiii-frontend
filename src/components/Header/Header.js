@@ -18,7 +18,9 @@ function Header() {
                 <h1>Grand Theft Auto: III</h1>
             </section>
             <section className="contact">
-                <i onClick={() => setContact(!stateContact)} className="far fa-envelope"></i>
+                <div className="contactButton">
+                    <i onClick={() => setContact(!stateContact)} className="far fa-envelope"></i>
+                </div>
                 <article className={stateContact ? "contactCardVisible" : "contactCardInvisible"}>
                     <h4>Contacto</h4>
                     <p>kevin170597@gmail.com</p>

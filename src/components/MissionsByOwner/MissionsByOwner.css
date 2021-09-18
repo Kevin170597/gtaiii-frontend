@@ -5,10 +5,15 @@
 
 .missionsByOwner .missionsContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .missionsByOwner .missionsContainer figure {
-    width: 20%;
+    margin: 0 15px 0 20px;
+    width: 18%;
+    height: 70vh;
+    background-color: #FFFFFF;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,29 +33,62 @@
 }
 
 .missionsByOwner .missionsContainer .missionsList {
-    background-color: #2E3D45;
-    width: 80%;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 0 0 0 15px;
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards {
-    background-color: #28373E;
+    width: 23%;
     display: flex;
-    margin-top: 10px;
-    color: white;
-    padding: 15px;
+    flex-direction: column;
+    margin: 0 10px 15px 0;
+    color: #000000;
+    border-radius: 15px;
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo {
-    width: 20%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    background-color: #FFFFFF;
+}
+
+.missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .cityTag {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .rewardTag {
+    background-color: #F9CE65;
+    color: #000000;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .objectiveTag {
+    background-color: #BF3921;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    border-radius: 15px;
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards .guide {
-    width: 80%;
-    padding-left: 10px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    background-color: #FFFFFF;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .missionsByOwner .missionsContainer {
         flex-direction: column;
     }

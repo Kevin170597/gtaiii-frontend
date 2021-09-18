@@ -60,7 +60,7 @@
     width: 80%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .r3 .r3Cards article {
         width: 100%;
         margin: 5px;

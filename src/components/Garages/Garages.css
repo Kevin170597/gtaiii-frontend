@@ -169,7 +169,7 @@ article.garagelist .carsList .openList button:hover {
     color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .garages .garageDescription .garagesDescription {
         width: 100%;
     }

@@ -11,7 +11,7 @@ section.itemsTitle {
 }
 
 section.itemsTitle h1 {
-    color: white;
+    color: #000000;
     font-family: 'Courgette', cursive;
     font-size: 25px;
 }
@@ -43,7 +43,8 @@ section.itemsTitle h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #28373E;
+    background-color: #FFFFFF;
+    border-radius: 15px 15px 0 0;
 }
 
 .itemsContainer .items .itemsCards .itemImage img {
@@ -53,17 +54,18 @@ section.itemsTitle h1 {
 .itemsContainer .items .itemsCards .itemInfo {
     width: 100%;
     padding: 15px;
-    background-color: #28373E;
+    background-color: #FFFFFF;
+    border-radius: 0 0 15px 15px;
 }
 
 .itemsContainer .items .itemsCards .itemInfo h4 {
-    color: white;
+    color: #000000;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
 
 .itemsContainer .items .itemsCards .itemInfo p {
-    color: white;
+    color: #000000;
 }
 
 .itemsContainer .guns {
@@ -83,7 +85,8 @@ section.itemsTitle h1 {
 
 .itemsContainer .guns .gunsCards .gunImage {
     width: 100%;
-    background-color: #28373E;
+    background-color: #FFFFFF;
+    border-radius: 15px 15px 0 0;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -95,9 +98,10 @@ section.itemsTitle h1 {
 }
 
 .itemsContainer .guns .gunsCards .gunInfo {
-    background-color: #2E3D45;
+    background-color: #000000;
     width: 100%;
     padding: 15px;
+    border-radius: 0 0 15px 15px;
 }
 
 .itemsContainer .guns .gunsCards .gunInfo h4 {
@@ -111,6 +115,24 @@ section.itemsTitle h1 {
 }
 
 @media (max-width: 480px) {
+    .itemsContainer {
+        flex-direction: column;
+    }
+
+    .itemsContainer .items {
+        width: 100%;
+    }
+
+    .itemsContainer .guns {
+        width: 100%;
+    }
+
+    .itemsContainer .guns .gunsCards {
+        width: 45%;
+    }
+}
+
+@media (min-width: 480px) and (max-width:800px) {
     .itemsContainer {
         flex-direction: column;
     }

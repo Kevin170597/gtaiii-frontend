@@ -186,7 +186,7 @@ section.rampagesList .rampagesCard .location figure {
     margin-right: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .rampages .rampageDescription {
         flex-direction: column;
     }

@@ -1,5 +1,5 @@
 .missions {
-    margin: 10px;
+    padding-top: 20px;
     min-height: 92vh;
 }
 
@@ -9,31 +9,34 @@ section.missionsTitle {
 }
 
 section.missionsTitle h1 {
-    color: white;
+    color: #000000;
     font-family: 'Courgette', cursive;
     font-size: 25px;
 }
 
 section.missionsMaps {
     display: flex;
+    justify-content: center;
 }
 
-section.missionsMaps h2 {
-    color: white;
-    font-size: 15px;
+section.missionsMaps h3 {
+    color: #FFFFFF;
     padding: 10px;
+    background-color: #BF3921;
+    width: 60%;
+    border-radius: 15px 15px 0 0;
 }
 
 section.missionsMaps .shoreside {
-    width: 33%;
+    width: 28%;
 }
 
 section.missionsMaps .staunton{
-    width: 33%;
+    width: 28%;
 }
 
 section.missionsMaps .portland {
-    width: 33%;
+    width: 28%;
 }
 
 section.missionsMaps .mapAndIcons {
@@ -41,7 +44,57 @@ section.missionsMaps .mapAndIcons {
     align-items: center;
 }
 
-@media (max-width: 480px) {
+@keyframes mapBlur {
+    from {opacity: 0; filter: blur(20px);}
+    to {opacity: 1; filter: blur(0px);}
+}
+
+section.missionsMaps .mapAndIcons img {
+    width: 76%;
+    cursor: pointer;
+    animation-name: mapBlur;
+    animation-duration: 0.6s;
+    border-radius: 0 15px 15px 15px;
+}
+
+@keyframes iconsHidden {
+    from {position: relative; right: 20%;opacity: 0; filter: blur(5px); background: none;}
+    to {right: -20%; opacity: 1;filter: blur(0px); background-color: #F9CE65;}
+}
+
+section.missionsMaps .mapAndIcons ul.icons {
+    animation-name: iconsHidden;
+    animation-duration: 1s;
+    z-index: 0;
+    background-color: #F9CE65;
+    border-radius: 0 15px 15px 0;
+}
+
+section.missionsMaps .mapAndIcons ul.iconsNone {
+    display: none;
+}
+
+section.missionsMaps .mapAndIcons ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.missionsMaps .mapAndIcons ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+section.missionsMaps .mapAndIcons ul li a p {
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
     section.missionsMaps {
         flex-direction: column;
     }
@@ -66,51 +119,4 @@ section.missionsMaps .mapAndIcons {
     section.missionsMaps .mapAndIcons {
         justify-content: center;
     }
-}
-
-@keyframes mapBlur {
-    from {opacity: 0; filter: blur(20px);}
-    to {opacity: 1; filter: blur(0px);}
-}
-
-section.missionsMaps .mapAndIcons img {
-    width: 76%;
-    cursor: pointer;
-    animation-name: mapBlur;
-    animation-duration: 0.6s;
-}
-
-@keyframes iconsHidden {
-    from {position: relative; right: 20%;opacity: 0; filter: blur(5px);}
-    to {right: -20%; opacity: 1;filter: blur(0px);}
-}
-
-section.missionsMaps .mapAndIcons ul.icons {
-    animation-name: iconsHidden;
-    animation-duration: 1s;
-    z-index: 0;
-}
-
-section.missionsMaps .mapAndIcons ul.iconsNone {
-    display: none;
-}
-
-section.missionsMaps .mapAndIcons ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-section.missionsMaps .mapAndIcons ul li a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    color: white;
-    text-decoration: none;
-}
-
-section.missionsMaps .mapAndIcons ul li a p {
-    font-size: 14px;
 }

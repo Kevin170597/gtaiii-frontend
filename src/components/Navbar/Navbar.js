@@ -29,7 +29,7 @@ function Navbar() {
                 <article className="closeMobile" onClick={() => setMenu(!stateMenu)}>
                     <i className="fas fa-times"></i>
                 </article>
-                <article onMouseEnter={() => setTip(1)} onMouseLeave={() => setTip("tooltipNone")} onClick={() => setMenu(!stateMenu)}>
+                <article className="topBorder" onMouseEnter={() => setTip(1)} onMouseLeave={() => setTip("tooltipNone")} onClick={() => setMenu(!stateMenu)}>
                     <NavLink to="/maps"><img src={map_icon} alt="icon"></img></NavLink>
                     <p>Mapa</p>
                     <div className={stateTip === 1 ? "tooltip " : "tooltipNone"}>Mapa</div>
@@ -84,7 +84,7 @@ function Navbar() {
                     <p>Saltos</p>
                     <div className={stateTip === 11 ? "tooltip " : "tooltipNone"}>Saltos únicos</div>
                 </article>
-                <article onMouseEnter={() => setTip(12)} onMouseLeave={() => setTip("tooltipNone")} onClick={() => setMenu(!stateMenu)}>
+                <article className="bottomBorder" onMouseEnter={() => setTip(12)} onMouseLeave={() => setTip("tooltipNone")} onClick={() => setMenu(!stateMenu)}>
                     <NavLink to="/garages"><img src={garage_icon} alt="icon"></img></NavLink>
                     <p>Garages</p>
                     <div className={stateTip === 12 ? "tooltip " : "tooltipNone"}>Garages exp/imp</div>

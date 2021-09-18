@@ -200,7 +200,7 @@ section.packagesList .packagesCard figure img {
     width: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
     .packages .packagesDescription {
         flex-direction: column;
     }
