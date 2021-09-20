@@ -15,13 +15,14 @@ section.bandsTitle h1 {
 }
 
 section.cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 14px;
+    padding: 0 15px 15px 15px;
 }
 
-section.cardsContainer article {
-    width: 22%;
-    margin: 8px;
+section.cardsContainer article.bandsCard {
+    width: 100%;
 }
 
 section.cardsContainer article:hover {
@@ -70,14 +71,13 @@ section.cardsContainer .modal .modalCard {
     width: 60%;
     height: 70%;
     border-radius: 15px;
-    padding: 20px;
 }
 
 section.modalHeader {
     display: flex;
     align-items: center;
     height: 12%;
-    padding: 10px;
+    padding: 10px 20px 0 20px;
 }
 
 section.modalHeader .modalTitle {
@@ -114,7 +114,8 @@ section.modalInfo {
 }
 
 article.bandlogo {
-    width: 30%;
+    width: 25%;
+    padding-left: 20px;
 }
 
 article.bandlogo .info {
@@ -122,6 +123,42 @@ article.bandlogo .info {
     padding: 8px;
     margin-top: 10px;
     margin-left: 5px;
+}
+
+article.bandlogo .info .boss {
+    background-color: #A11751;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+article.bandlogo .info .location {
+    background-color: #F9CE65;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #000000;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+article.bandlogo .info .nationality {
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+article.bandlogo .info .infovehicle {
+    background-color: #BF3921;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 figure.logoImage {
@@ -133,31 +170,35 @@ figure.logoImage {
 }
 
 figure.logoImage img {
-    width: 100%;
+    width: 80%;
 }
 
 figure.member {
-    width: 20%;
+    width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 figure.member img {
-    width: 90%;
+    width: 70%;
 }
 
 figure.car {
+    padding-right: 20px;
     width: 50%;
+    background-image: url("/src/assets/sun.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 figure.car .carImage {
     width: 100%;
-    position: relative;
-    bottom: 65%;
 }
 
 figure.car .sunImage {
@@ -167,9 +208,9 @@ figure.car .sunImage {
 }
 
 @media (max-width: 800px) {
-    section.cardsContainer article {
-        width: 48%;
-        margin: 4px;
+    section.cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 14px;
     }
 
     section.modalHeader {
@@ -187,8 +228,17 @@ figure.car .sunImage {
 
     section.cardsContainer article.bandlogo {
         width: 60%;
-        margin: 0;
-        padding: 15px;
+        height: 50%;
+        padding: 0;
+    }
+
+    figure.logoImage {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    figure.logoImage img {
+        width: 60%;
     }
 
     figure.member {
@@ -198,21 +248,16 @@ figure.car .sunImage {
     }
 
     figure.member img {
-        width: 90%;
+        width: 80%;
     }
 
     figure.car {
         width: 100%;
-        height: 20%;
+        height: 50%;
+        background-size: 60%;
     }
 
     figure.car .carImage {
         width: 70%;
-        bottom: 200%;
-    }
-
-    figure.car .sunImage {
-        width: 60%;
-        top: -30%;
     }
 }

@@ -4,23 +4,24 @@
 }
 
 .r3 .r3Description {
-    color: white;
+    color: #000000;
     padding: 10px;
 }
 
 .r3 .r3Cards {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 14px;
+    color: #000000;
 }
 
 .r3 .r3Cards article {
-    background-color: #28373E;
-    width: 48%;
-    margin: 10px;
+    background-color: #FFFFFF;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .r3 .r3Cards article .r3Title {
@@ -40,8 +41,15 @@
     padding: 10px;
 }
 
+.r3 .r3Cards article .r3Guide h5 {
+    background-color: #BF3921;
+    color: #FFFFFF;
+    padding: 0 12px 0 12px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
 .r3 .r3Cards article .r3Reward {
-    background-color: #2E3D45;
     width: 100%;
     padding: 5px;
     display: flex;
@@ -49,6 +57,14 @@
 
 .r3 .r3Cards article .r3Reward .r3RewardTitle {
     width: 70%;
+}
+
+.r3 .r3Cards article .r3Reward .r3RewardTitle h4 {
+    background-color: #F9CE65;
+    color: #000000;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    border-radius: 15px;
 }
 
 .r3 .r3Cards article .r3Reward .r3RewardImage {
@@ -61,6 +77,10 @@
 }
 
 @media (max-width: 800px) {
+    .r3 .r3Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
     .r3 .r3Cards article {
         width: 100%;
         margin: 5px;

@@ -50,9 +50,9 @@ function ItemsGuns() {
                                 </div>
                                 <div className="gunInfo">
                                     <h4>{gun.name}</h4>
-                                    <p>$ {gun.price}</p>
-                                    <p>Daño a personas: {gun.people_damage}</p>
-                                    <p>Daño a vehiculos: {gun.vehicle_damage}</p>
+                                    <p className="gunPrice">$ {gun.price}</p>
+                                    <p className="gunPeople">Daño a personas: {gun.people_damage}</p>
+                                    <p className="gunVehicles">Daño a vehiculos: {gun.vehicle_damage}</p>
                                 </div>
                             </div>
                         )

@@ -23,6 +23,8 @@ function Phones() {
     const [stateModal, setModal] = useState("");
     const [stateList, setList] = useState("");
 
+    const [stateText, setText] = useState("");
+
     return (
         <div className="phones">
             <section className="missionsTitle">
@@ -57,9 +59,13 @@ function Phones() {
                                         stateMissions.map((mission) =>
                                             <div className="missionPhoneCard" key={mission.id}>
                                                 <h1>{mission.name}</h1>
-                                                <p>Objetivo: {mission.objective}</p>
-                                                <p>$ {mission.reward}</p>
-                                                <p>Guía: {mission.guide}</p>
+                                                <div className="phoneInfo">
+                                                    <p className="phoneObjective">Objetivo: {mission.objective}</p>
+                                                    <p className="phoneReward">$ {mission.reward}</p>
+                                                </div>
+                                                <p className="phoneGuide">Guía: {stateText === mission.id ? mission.guide.slice(0, 1000) : mission.guide.slice(0, 160)}
+                                                    <b onClick={() => setText(stateText === mission.id ? "" : mission.id)}>{stateText === mission.id ? " ...ver menos" : " ...ver más"}</b>
+                                                </p>
                                             </div>
                                         ) 
                                     } {!stateMissions &&
@@ -67,7 +73,9 @@ function Phones() {
                                     }
                                 </div>
                                 <div onClick={() => getMissions(phone.owner)} className="openList">
-                                    <button onClick={() => setList(stateList === phone.id ? "" : phone.id)}><i className="fas fa-grip-lines"></i></button>
+                                    <button onClick={() => setList(stateList === phone.id ? "" : phone.id)}>
+                                        <i className={stateList === phone.id ? "fas fa-chevron-up" : "fas fa-chevron-down"}></i>
+                                    </button>
                                 </div>
                             </div>
                         </article>

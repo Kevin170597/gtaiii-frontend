@@ -23,11 +23,12 @@
 
 .packages .packagesDescription .packageDescription {
     width: 70%;
+    color: #000000;
 }
 
 .packages section.packagesRewards {
     margin-top: 10px;
-    color: white;
+    color: #000000;
     padding: 10px;
 }
 
@@ -54,7 +55,7 @@
 .packages .packagesContainer {
     display: flex;
     padding-top: 20px;
-    color: white;
+    color: #FFFFFF;
 }
 
 .packages .packagesContainer .packagesMaps {
@@ -62,8 +63,10 @@
 }
 
 .packages .packagesContainer .packagesMaps .packageMap {
-    margin: 10px;
-    background-color: #28373E;
+    margin: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -80,10 +83,11 @@
 }
 
 .packages .packagesContainer .packagesMaps .packageMap .packageMapTooltip {
-    background-color: #1D2930;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 15px;
     height: 28px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 12px 0 12px;
     animation-name: tooltipBlur;
     animation-duration: 0.3s;
 }
@@ -125,19 +129,17 @@
 
 .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal i {
     width: 100%;
+    color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
     cursor: pointer;
 }
 
-.packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal i:hover {
-    color: #E28F2D;
-}
-
 .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal img {
     height: 80%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .packages .packagesContainer .packagesMaps .packageMap .packageInfo {
@@ -158,7 +160,7 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background-color: #E28F2D;
+    background-color: #F9CE65;
     cursor: pointer;
 }
 
@@ -181,23 +183,33 @@
 }
 
 section.packagesList {
-    color: white;
     margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 14px;
 }
 
 section.packagesList .packagesCard {
-    background-color: #28373E;
+    background-color: #FFFFFF;
+    width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
-    width: 20%;
+    border-radius: 15px;
+    padding: 10px 15px 15px 15px;
+}
+
+section.packagesList .packagesCard p {
+    background-color: #BF3921;
+    color: #FFFFFF;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    margin-bottom: 10px;
 }
 
 section.packagesList .packagesCard figure img {
     width: 100%;
+    border-radius: 15px;
 }
 
 @media (max-width: 800px) {
@@ -245,7 +257,7 @@ section.packagesList .packagesCard figure img {
         height: auto;
     }
 
-    section.packagesList .packagesCard {
-        width: 50%;
+    section.packagesList {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -14,6 +14,8 @@ function MissionsByOwner() {
         .then(data => setMission(data));
     }, []);
 
+    const [stateText, setText] = useState("");
+
     return (
         <div className="missionsByOwner">
             <section className="missionsTitle">
@@ -35,11 +37,15 @@ function MissionsByOwner() {
                                 </div>
                                 <div className="guide">
                                     <h1>Guía</h1>
-                                    <p>{mission.guide}</p>
+                                    <p>{stateText === mission.id ? mission.guide.slice(0, 1000) : mission.guide.slice(0, 160)} 
+                                        <b onClick={() => setText(stateText === mission.id ? "" : mission.id)}>{stateText === mission.id ? " ...ver menos" : " ...ver más"}</b>
+                                    </p>
                                 </div>
                             </div>
                         )
-                    }   
+                    } {!stateMission &&
+                        <p>Loading</p>
+                    }
                 </section>
             </section>
         </div>

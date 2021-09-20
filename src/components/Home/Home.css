@@ -78,25 +78,34 @@ article.claude img {
     }
 
     article.cover {
-        width: 100%;
+        width: 90%;
+        height: auto;
         display: flex;
         justify-content: center;
+        margin-top: 15px;
         padding-top: 30px;
         padding-bottom: 10px;
+        border-radius: 15px 15px 0 0;
     }
 
     article.cover img {
         width: 50%;
+        height: auto;
         margin-left: 0;
     }
 
     article.introduction {
-        width: 100%;
+        width: 90%;
         padding: 10px 30px 20px 30px;
+        border-radius: 0 0 15px 15px;
+        margin-bottom: 20px;
     }
 
     article.claude {
-        width: 100%;
+        width: 90%;
+        margin: 0;
+        height: auto;
+        padding-top: 20px;
     }
 
     article.claude img {

@@ -24,12 +24,13 @@
 .jumps .jumpDescription .jumpsDescription {
     width: 60%;
     padding-left: 20px;
+    color: #000000;
 }
 
 .jumps .jumpsContainer {
     display: flex;
     padding-top: 20px;
-    color: white;
+    color: #FFFFFF;
 }
 
 .jumps .jumpsContainer .jumpsMaps {
@@ -37,8 +38,10 @@
 }
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap {
-    margin: 10px;
-    background-color: #28373E;
+    margin: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -55,10 +58,11 @@
 }
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsMapTooltip {
-    background-color: #1D2930;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 15px;
     height: 28px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 12px 0 12px;
     animation-name: tooltipBlur;
     animation-duration: 0.3s;
 }
@@ -100,19 +104,17 @@
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal i {
     width: 100%;
+    color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
     cursor: pointer;
 }
 
-.jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal i:hover {
-    color: #E28F2D;
-}
-
 .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal img {
     height: 80%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsInfo {
@@ -133,7 +135,7 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background-color: #E28F2D;
+    background-color: #F9CE65;
     cursor: pointer;
 }
 
@@ -156,23 +158,33 @@
 }
 
 section.jumpsList {
-    color: white;
     margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 14px;
 }
 
 section.jumpsList .jumpsCard {
-    background-color: #28373E;
+    background-color: #FFFFFF;
     margin-bottom: 10px;
-    padding: 10px;
-    width: 20%;
+    padding: 10px 15px 15px 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+section.jumpsList .jumpsCard p {
+    background-color: #BF3921;
+    color: #FFFFFF;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    margin-bottom: 10px;
 }
 
 section.jumpsList .jumpsCard figure img {
     width: 100%;
+    border-radius: 15px;
 }
 
 @media (max-width: 800px) {
@@ -210,7 +222,11 @@ section.jumpsList .jumpsCard figure img {
         height: auto;
     }
 
+    section.jumpsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     section.jumpsList .jumpsCard {
-        width: 50%;
+        width: 100%;
     }
 }

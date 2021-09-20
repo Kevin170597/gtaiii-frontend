@@ -7,8 +7,9 @@ article.phoneMissions {
     width: 100%;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #28373E;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 15px;
 }
 
 article.phoneMissions .phoneCard {
@@ -20,7 +21,7 @@ article.phoneMissions .phoneMap {
 }
 
 article.phoneMissions .phoneMap h1 {
-    color: white;
+    color: #FFFFFF;
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin-bottom: 10px;
@@ -29,6 +30,7 @@ article.phoneMissions .phoneMap h1 {
 article.phoneMissions .phoneMap img {
     width: 100%;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 article.phoneMissions figure {
@@ -44,13 +46,15 @@ article.phoneMissions figure img {
 }
 
 article.phoneMissions .infoPhone {
-    background-color: #2E3D45;
+    background-color: #FFFFFF;
+    border-radius: 15px;
     width: 75%;
     padding: 15px;
+    color: #000000;
 }
 
 article.phoneMissions .infoPhone h1 {
-    color: white;
+    color: #000000;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
@@ -91,11 +95,13 @@ article.phoneMissions .modalVisible .modalMap i {
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
+    cursor: pointer;
 }
 
 article.phoneMissions .modalVisible img {
     height: 85%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 @keyframes openlist {
@@ -106,25 +112,59 @@ article.phoneMissions .modalVisible img {
 article.phoneMissions .phoneMissionList .phoneList {
     animation-name: openlist;
     animation-duration: 0.5s;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 14px;
     margin-top: 20px;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
-    width: 20%;
-    margin: 10px;
+    width: 100%;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
-    background-color: #2E3D45;
+    background-color: #FFFFFF;
     font-family: 'Courgette', cursive;
-    color: white;
-    padding: 10px;
+    color: #000000;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo {
+    background-color: #FFFFFF;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo .phoneObjective {
+    background-color: #BF3921;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    border-radius: 15px;
+    margin: 0 5px 5px 10px;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo .phoneReward {
+    background-color: #F9CE65;
+    color: #000000;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    border-radius: 15px;
+    margin-left: 10px;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard p {
-    background-color: #2E3D45;
-    padding: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 15px 15px 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard b {
+    cursor: pointer;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard b:hover {
+    color: #BF3921;
 }
 
 article.phoneMissions .phoneMissionList .phoneListNone {
@@ -143,7 +183,7 @@ article.phoneMissions .phoneMissionList .openList button {
     border: none;
     position: relative;
     top: 40px;
-    background-color: #E28F2D;
+    background-color: #F9CE65;
     cursor: pointer;
 }
 
@@ -153,8 +193,8 @@ article.phoneMissions .phoneMissionList .openList button:hover {
     -moz-box-shadow: -5px 3px 31px -7px rgba(192,163,1,1);
 }
 
-.fa-grip-lines {
-    color: white;
+article.phoneMissions .phoneMissionList .openList button i {
+    color: #000000;
 }
 
 @media (max-width: 800px) {
@@ -172,10 +212,11 @@ article.phoneMissions .phoneMissionList .openList button:hover {
     
     article.phoneMissions .infoPhone {
         width: 100%;
+        margin-top: 10px;
     }
 
     article.phoneMissions .phoneMissionList .phoneList {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {

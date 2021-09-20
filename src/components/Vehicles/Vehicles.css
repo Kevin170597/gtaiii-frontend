@@ -15,19 +15,18 @@ section.vehiclesTitle h1 {
 }
 
 .vehiclesContainer .vehicles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 14px;
+    padding: 0 12px 12px 12px;
 }
 
-.vehiclesContainer .vehicles .vehicleCard {
-    width: 18%;
-    margin: 10px;
+.vehiclesContainer .vehicles .vehiclesCard {
+    width: 100%;
     cursor: pointer;
 }
 
-.vehiclesContainer .vehicles .vehicleCard .vehicleImage {
+.vehiclesContainer .vehicles .vehiclesCard .vehicleImage {
     background-color: #FFFFFF;
     width: 100%;
     display: flex;
@@ -37,33 +36,43 @@ section.vehiclesTitle h1 {
     padding: 10px;
 }
 
-.vehiclesContainer .vehicles .vehicleCard .vehicleImage img {
+.vehiclesContainer .vehicles .vehiclesCard .vehicleImage img {
     width: 80%;
 }
 
-.vehiclesContainer .vehicles .vehicleCard .vehicleInfo {
+.vehiclesContainer .vehicles .vehiclesCard .vehicleInfo {
     background-color: #FFFFFF;
     color: #000000;
     padding: 10px;
+    border-radius: 0 0 15px 15px;
 }
 
-.vehiclesContainer .vehicles .vehicleCard .vehicleInfo h4 {
+.vehiclesContainer .vehicles .vehiclesCard .vehicleInfo h4 {
     color: #000000;
     font-family: 'Courgette', cursive;
 }
 
-.vehiclesContainer .vehicles .vehicleCard .vehicleInfo p {
-    border: solid 1px #000000;
+.vehiclesContainer .vehicles .vehiclesCard .vehicleInfo p {
+    background-color: #BF3921;
+    display: inline-block;
+    color: #FFFFFF;
     border-radius: 15px;
-    padding: 0 10px 0 15px;
-    width: 80%;
-    min-width: 50%;
+    padding: 0 15px 0 15px;
     margin-top: 10px;
 }
 
 @media (max-width: 800px) {
-    .vehiclesContainer .vehicles .vehicleCard {
-        width: 30%;
-        margin: 5px;
+    .vehiclesContainer .vehicles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vehiclesContainer .vehicles .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+    .vehiclesContainer .vehicles {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

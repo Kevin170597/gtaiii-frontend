@@ -116,9 +116,9 @@ function Rampage() {
                         <div className="rampagesCard" key={rampage.id}>
                             <div className="rampageCardInfo">
                                 <h2>Masacre {rampage.name}</h2>
-                                <p>Ciudad: {rampage.city}</p>
-                                <p>Arma: {rampage.gun}</p>
-                                <p>Tiempo: {rampage.time}</p>
+                                <p className="rampageCity">{rampage.city}</p>
+                                <p className="rampageGun">{rampage.gun}</p>
+                                <p className="rampageDuration">{rampage.time}</p>
                             </div>
                             <div className="location">
                                 <figure>

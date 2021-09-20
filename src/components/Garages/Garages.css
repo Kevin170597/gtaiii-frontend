@@ -12,14 +12,17 @@
 .garages .garageDescription .garagesDescription {
     width: 80%;
     padding-left: 20px;
+    color: #000000;
 }
 
 article.garagelist {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #28373E;
-    color: white;
+    background-color: #000000;
+    border-radius: 15px;
+    color: #FFFFFF;
 }
 
 article.garagelist .garageCard {
@@ -31,7 +34,7 @@ article.garagelist .garageMap {
 }
 
 article.garagelist .garageMap h1 {
-    color: white;
+    color: #FFFFFF;
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin-bottom: 10px;
@@ -40,6 +43,7 @@ article.garagelist .garageMap h1 {
 article.garagelist .garageMap img {
     width: 100%;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 article.garagelist figure {
@@ -51,22 +55,26 @@ article.garagelist figure {
 
 article.garagelist figure img {
     width: 90%;
+    border-radius: 15px;
 }
 
 article.garagelist .infoGarage {
-    background-color: #2E3D45;
+    background-color: #FFFFFF;
+    color: #000000;
     width: 70%;
     padding: 15px;
+    border-radius: 15px;
 }
 
 article.garagelist .infoGarage h1 {
-    color: white;
+    color: #000000;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
 
 article.garagelist .infoGarage p {
     margin-top: 20px;
+    color: #000000;
 }
 
 article.garagelist .modalInvisible {
@@ -102,11 +110,13 @@ article.garagelist .modalVisible .modalMap i {
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
     cursor: pointer;
+    color: #FFFFFF;
 }
 
 article.garagelist .modalVisible img {
     height: 80%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 @keyframes openlist {
@@ -117,26 +127,28 @@ article.garagelist .modalVisible img {
 article.garagelist .carsList .garageList {
     animation-name: openlist;
     animation-duration: 0.5s;
-    display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 14px;
+    margin-top: 15px;
 }
 
 article.garagelist .carsList .garageList .vehiclesCard {
-    width: 18%;
-    margin: 10px;
+    width: 100%;
 }
 
 article.garagelist .carsList .garageList .vehiclesCard h1 {
-    background-color: #2E3D45;
-    color: white;
+    background-color: #FFFFFF;
+    color: #000000;
     padding: 10px;
+    border-radius: 15px 15px 0 0;
 }
 
 article.garagelist .carsList .garageList .vehiclesCard figure {
-    background-color: #2E3D45;
+    background-color: #FFFFFF;
     padding: 10px;
     width: 100%;
+    border-radius: 0 0 15px 15px;
 }
 
 article.garagelist .carsList .garageListNone {
@@ -155,7 +167,7 @@ article.garagelist .carsList .openList button {
     border: none;
     position: relative;
     top: 40px;
-    background-color: #E28F2D;
+    background-color: #F9CE65;
     cursor: pointer;
 }
 
@@ -192,6 +204,7 @@ article.garagelist .carsList .openList button:hover {
 
     article.garagelist .infoGarage {
         width: 100%;
+        margin-top: 14px;
     }
 
     article.garagelist .modalVisible .modalMap {
@@ -202,9 +215,12 @@ article.garagelist .carsList .openList button:hover {
         width: 96%;
         height: auto;
     }
+
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     article.garagelist .carsList .garageList .vehiclesCard {
-        width: 30%;
-        margin: 3px;
+        width: 100%;
     }
 }

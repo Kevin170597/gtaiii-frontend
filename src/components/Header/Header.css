@@ -109,14 +109,17 @@ article.contactCardVisible a i {
     }
 
     section.logo {
+        align-items: center;
         width: 20%;
     }
 
     section.title {
+        align-items: center;
         width: 50%;
     }
     
     section.contact {
+        align-items: center;
         width: 20%;
     }
 }

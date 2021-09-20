@@ -33,14 +33,16 @@
 }
 
 .missionsByOwner .missionsContainer .missionsList {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(200px, auto);
+    grid-gap: 0px;
     width: 75%;
     padding: 0 0 0 15px;
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards {
-    width: 23%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     margin: 0 10px 15px 0;
@@ -61,7 +63,7 @@
     display: inline-block;
     padding: 0 15px 0 15px;
     border-radius: 15px;
-    margin-bottom: 5px;
+    margin: 5px 5px 0 0;
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .rewardTag {
@@ -83,9 +85,17 @@
 
 .missionsByOwner .missionsContainer .missionsList .listCards .guide {
     width: 100%;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
     border-radius: 0 0 15px 15px;
     background-color: #FFFFFF;
+}
+
+.missionsByOwner .missionsContainer .missionsList .listCards .guide p b {
+    cursor: pointer;
+}
+
+.missionsByOwner .missionsContainer .missionsList .listCards .guide p b:hover {
+    color: #BF3921;
 }
 
 @media (max-width: 800px) {
@@ -94,7 +104,9 @@
     }
 
     .missionsByOwner .missionsContainer figure {
-        width: 100%;
+        width: 90%;
+        height: 30%;
+        margin: 0 0 20px 5%;
     }
 
     .missionsByOwner .missionsContainer figure img {
@@ -102,15 +114,18 @@
     }
 
     .missionsByOwner .missionsContainer .missionsList {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
         width: 100%;
+        padding: 0 15px 0 15px;
     }
 
     .missionsByOwner .missionsContainer .missionsList .listCards {
         flex-direction: column;
+        width: 100%;
     }
 
     .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo {
         width: 100%;
-        margin-bottom: 20px;
     }
 }

@@ -1,15 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import "./Bands.css";
 
-import sun from "../../assets/sun.png";
 import Loading from "../Loading/Loading";
 
 function Bands() {
     const [stateBands, setBands] = useState("");
-    console.log(stateBands);
 
     const [stateModal, setModal] = useState("");
-    console.log(stateModal)
 
     useEffect(() => {
         fetch("https://gtaiii.herokuapp.com/bands")
@@ -25,7 +22,7 @@ function Bands() {
             <section className="cardsContainer">
                 {stateBands &&
                     stateBands.map((band) =>
-                        <article key={band.id}>
+                        <article className="bandsCard" key={band.id}>
                             <h4>{band.name}</h4>
                             <figure onClick={() => setModal(band.id)} className="logoContainer">
                                 <img src={band.logo} alt="logo"></img>
@@ -43,10 +40,10 @@ function Bands() {
                                     <section className="modalInfo">
                                         <article className="bandlogo">
                                             <div className="info">
-                                                <p>Jefe: {band.boss}</p>
-                                                <p>Localización: {band.location}</p>
-                                                <p>Nacionalidad: {band.nationality}</p>
-                                                <p>Vehiculo: {band.vehicle}</p>
+                                                <p className="boss">Jefe: {band.boss}</p>
+                                                <p className="location">{band.location}</p>
+                                                <p className="nationality">{band.nationality}</p>
+                                                <p className="infovehicle">{band.vehicle}</p>
                                             </div>
                                             <figure className="logoImage">
                                                 <img src={band.logo} alt="logo"></img>
@@ -56,7 +53,6 @@ function Bands() {
                                             <img src={band.member} alt="member"></img>
                                         </figure>
                                         <figure className="car">
-                                            <img className="sunImage" src={sun} alt="sun"></img>
                                             <img className="carImage" src={band.car} alt="car"></img>
                                         </figure>
                                     </section>

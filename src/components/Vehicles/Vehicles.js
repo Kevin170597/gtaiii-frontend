@@ -20,7 +20,7 @@ function Vehicles() {
             <div className="vehicles">
                 {stateVehicles &&
                     stateVehicles.map((vehicle) =>
-                        <div className="vehicleCard" key={vehicle.id}>
+                        <div className="vehiclesCard" key={vehicle.id}>
                             <div className="vehicleImage">
                                 <img src={vehicle.image} alt="vehicle"></img>
                             </div>

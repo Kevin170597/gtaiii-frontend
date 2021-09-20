@@ -4,7 +4,7 @@
 }
 
 .rc4x4 .rc, .container4x4 {
-    color: white;
+    color: #000000;
 }
 
 .rc4x4 .rc .rcTitle, .container4x4 .title4x4 {
@@ -13,11 +13,13 @@
 
 .rc4x4 .rc .rcDescription, .container4x4 .description4x4 {
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .rc4x4 .rc .rcCards, .container4x4 .cards4x4 {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 14px;
 }
 
 .rc4x4 .rc .rcCards .rcLoading, .container4x4 .cards4x4 .Loading4x4 {
@@ -28,35 +30,51 @@
 }
 
 .rc4x4 .rc .rcCard, .container4x4 .card4x4 {
-    background-color: #28373E;
-    width: 22%;
-    margin: 5px;
-    padding: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-@media (max-width: 480px) {
-    .rc4x4 .rc .rcCard, .container4x4 .card4x4 {
-        width: 45%;
-    }
+.rc4x4 .rc .rcCard h4, .container4x4 .card4x4 h4 {
+    background-color: #FFFFFF;
+    padding: 10px 0 10px 15px;
+    border-radius: 15px 15px 0 0;
 }
 
 .rc4x4 .rc .rcCard figure, .container4x4 .card4x4 figure {
-    margin-top: 10px;
+    background-color: #FFFFFF;
+    padding: 0 15px 0 15px;
 }
 
 .rc4x4 .rc .rcCard figure img, .container4x4 .card4x4 figure img {
     width: 100%;
+    border-radius: 15px;
 }
 
-.rc4x4 .rc .rcCard button, .container4x4 .card4x4 button {
-    background-color: rgb(199, 199, 199);
+.rc4x4 .rc .rcCard .openLocation, .container4x4 .card4x4 .openLocation{
+    background-color: #FFFFFF;
     border: none;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0 0 10px 20px;
+}
+
+.rc4x4 .rc .rcCard .openLocation p, .container4x4 .card4x4 .openLocation p {
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding: 0 12px 0 12px;
+    background-color: #BF3921;
     cursor: pointer;
+}
+
+.rc4x4 .rc .rcCard h5, .container4x4 .card4x4 h5 {
+    background-color: #FFFFFF;
+    padding: 0 0 10px 15px;
+}
+
+.rc4x4 .rc .rcCard p, .container4x4 .card4x4 p {
+    background-color: #FFFFFF;
+    padding: 0 15px 15px 15px;
+    border-radius: 0 0 15px 15px;
 }
 
 .rc4x4 .rc .rcCard .rcModalNone, .container4x4 .card4x4 .ModalNone4x4 {
@@ -87,6 +105,7 @@
 
 .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC i, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 i {
     width: 100%;
+    color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
@@ -96,15 +115,12 @@
 .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC img, .container4x4 .card4x4 .ModalContainer4x4 img {
     height: 85%;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 @media (max-width: 800px) {
-    .rc4x4 .rc .rcCard, .container4x4 .card4x4 {
-        width: 47%;
-    }
-
-    .rc4x4 .rc .rcCard button, .container4x4 .card4x4 button {
-        height: 33px;
+    .rc4x4 .rc .rcCards, .container4x4 .cards4x4 {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .rc4x4 .rc .rcCard .rcModalContainer .close, .container4x4 .card4x4 .ModalContainer4x4 .close {

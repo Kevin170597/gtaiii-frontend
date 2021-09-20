@@ -97,6 +97,8 @@ section.missionsMaps .mapAndIcons ul li a p {
 @media (max-width: 800px) {
     section.missionsMaps {
         flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
     }
 
     section.missionsMaps h2 {
@@ -117,6 +119,7 @@ section.missionsMaps .mapAndIcons ul li a p {
     }
 
     section.missionsMaps .mapAndIcons {
-        justify-content: center;
+        justify-content: left;
+        margin-bottom: 20px;
     }
 }

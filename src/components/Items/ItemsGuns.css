@@ -23,14 +23,14 @@ section.itemsTitle h1 {
 
 .itemsContainer .items {
     width: 40%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 12px 12px 12px;
 }
 
 .itemsContainer .items .itemsCards {
-    width: 45%;
-    margin: 5px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,13 +70,15 @@ section.itemsTitle h1 {
 
 .itemsContainer .guns {
     width: 60%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 12px 12px 12px;
     flex-wrap: wrap;
 }
 
 .itemsContainer .guns .gunsCards {
-    width: 30%;
+    width: 100%;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -98,20 +100,44 @@ section.itemsTitle h1 {
 }
 
 .itemsContainer .guns .gunsCards .gunInfo {
-    background-color: #000000;
+    background-color: #FFFFFF;
     width: 100%;
     padding: 15px;
     border-radius: 0 0 15px 15px;
 }
 
 .itemsContainer .guns .gunsCards .gunInfo h4 {
-    color: white;
+    color: #000000;
     font-family: 'Courgette', cursive;
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.itemsContainer .guns .gunsCards .gunInfo p {
-    color: white;
+.itemsContainer .guns .gunsCards .gunInfo .gunPrice {
+    background-color: #BF3921;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.itemsContainer .guns .gunsCards .gunInfo .gunPeople {
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.itemsContainer .guns .gunsCards .gunInfo .gunVehicles {
+    background-color: #F9CE65;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+    color: #000000;
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 @media (max-width: 480px) {
@@ -125,10 +151,12 @@ section.itemsTitle h1 {
 
     .itemsContainer .guns {
         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .itemsContainer .guns .gunsCards {
-        width: 45%;
+        width: 100%;
     }
 }
 
@@ -146,6 +174,6 @@ section.itemsTitle h1 {
     }
 
     .itemsContainer .guns .gunsCards {
-        width: 45%;
+        width: 100%;
     }
 }
