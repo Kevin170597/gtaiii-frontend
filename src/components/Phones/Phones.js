@@ -69,7 +69,7 @@ function Phones() {
                                             </div>
                                         ) 
                                     } {!stateMissions &&
-                                        <p>loading</p>
+                                        <Loading />
                                     }
                                 </div>
                                 <div onClick={() => getMissions(phone.owner)} className="openList">

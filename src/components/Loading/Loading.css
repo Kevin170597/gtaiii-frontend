@@ -1,12 +1,12 @@
 .loadingContainer {
     display: flex;
     justify-content: center;
-    height: 82vh;
+    align-items: center;
     width: 100%;
 }
 
 .loadingContainer img {
-    height: 100%;
+    width: 8%;
 }
 
 @media (max-width: 480px) {

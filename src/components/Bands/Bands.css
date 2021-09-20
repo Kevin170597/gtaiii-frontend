@@ -35,6 +35,9 @@ section.cardsContainer article h4 {
     font-family: 'Courgette', cursive;
     padding: 12px;
     border-radius: 15px 15px 0 0;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 figure.logoContainer {
@@ -44,6 +47,9 @@ figure.logoContainer {
     align-items: center;
     padding: 25px;
     border-radius: 0 0 15px 15px;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 figure.logoContainer img {
@@ -71,6 +77,9 @@ section.cardsContainer .modal .modalCard {
     width: 60%;
     height: 70%;
     border-radius: 15px;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 section.modalHeader {
@@ -232,13 +241,20 @@ figure.car .sunImage {
         padding: 0;
     }
 
+    article.bandlogo .info {
+        margin: 0;
+        height: 30%;
+    }
+
     figure.logoImage {
         padding-top: 0px;
         padding-bottom: 0px;
+        height: 70%;
     }
 
     figure.logoImage img {
-        width: 60%;
+        height: 90%;
+        width: auto;
     }
 
     figure.member {
@@ -248,16 +264,18 @@ figure.car .sunImage {
     }
 
     figure.member img {
-        width: 80%;
+        height: 90%;
+        width: auto;
     }
 
     figure.car {
         width: 100%;
         height: 50%;
-        background-size: 60%;
+        background-size: 50%;
     }
 
     figure.car .carImage {
-        width: 70%;
+        height: 80%;
+        width: auto;
     }
 }

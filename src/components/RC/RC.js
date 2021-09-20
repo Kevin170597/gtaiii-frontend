@@ -51,9 +51,7 @@ function RC() {
                         )
                     }
                     {!stateRC &&
-                        <div className="rcLoading">
-                            <Loading />
-                        </div>
+                        <Loading />
                     }
                 </div>
             </section>

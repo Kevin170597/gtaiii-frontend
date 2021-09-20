@@ -22,6 +22,9 @@
     flex-wrap: wrap;
     padding: 10px;
     border-radius: 15px;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .r3 .r3Cards article .r3Title {

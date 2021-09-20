@@ -3,6 +3,8 @@ import "./MissionsByOwner.css";
 
 import Context from "../../Contexts/Context";
 
+import Loading from "../Loading/Loading";
+
 function MissionsByOwner() {
     const [stateMission, setMission] = useState("");
 
@@ -44,7 +46,7 @@ function MissionsByOwner() {
                             </div>
                         )
                     } {!stateMission &&
-                        <p>Loading</p>
+                        <Loading />
                     }
                 </section>
             </section>

@@ -45,6 +45,9 @@ section.itemsTitle h1 {
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 15px 15px 0 0;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .itemsContainer .items .itemsCards .itemImage img {
@@ -56,6 +59,9 @@ section.itemsTitle h1 {
     padding: 15px;
     background-color: #FFFFFF;
     border-radius: 0 0 15px 15px;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .itemsContainer .items .itemsCards .itemInfo h4 {
@@ -93,6 +99,9 @@ section.itemsTitle h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .itemsContainer .guns .gunsCards .gunImage img {
@@ -104,6 +113,9 @@ section.itemsTitle h1 {
     width: 100%;
     padding: 15px;
     border-radius: 0 0 15px 15px;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .itemsContainer .guns .gunsCards .gunInfo h4 {

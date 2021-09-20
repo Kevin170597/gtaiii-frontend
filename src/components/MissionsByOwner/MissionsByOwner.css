@@ -17,6 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 @keyframes ownerBlur {
@@ -35,7 +38,6 @@
 .missionsByOwner .missionsContainer .missionsList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(200px, auto);
     grid-gap: 0px;
     width: 75%;
     padding: 0 0 0 15px;
@@ -55,6 +57,9 @@
     padding: 15px;
     border-radius: 15px 15px 0 0;
     background-color: #FFFFFF;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .cityTag {
@@ -88,6 +93,9 @@
     padding: 0px 15px 15px 15px;
     border-radius: 0 0 15px 15px;
     background-color: #FFFFFF;
+    box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
+    -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards .guide p b {
