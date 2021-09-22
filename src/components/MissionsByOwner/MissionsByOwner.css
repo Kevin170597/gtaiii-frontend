@@ -106,6 +106,26 @@
     color: #BF3921;
 }
 
+@keyframes loading {
+    0%{filter: saturate(80%);}
+    50% {filter: saturate(0%);}
+    100% {filter: saturate(80%);}
+}
+
+.missionsByOwner .missionsContainer .missionsList .loadingImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.missionsByOwner .missionsContainer .missionsList .loadingImage img {
+    width: 100%;
+}
+
 @media (max-width: 800px) {
     .missionsByOwner .missionsContainer {
         flex-direction: column;
@@ -135,5 +155,9 @@
 
     .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo {
         width: 100%;
+    }
+
+    .missionsByOwner .missionsContainer .missionsList .loadingImage {
+        height: 100%;
     }
 }

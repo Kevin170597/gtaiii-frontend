@@ -104,18 +104,28 @@ article.phoneMissions .modalVisible img {
     border-radius: 15px;
 }
 
-@keyframes openlist {
-    from {opacity: 0; filter: blur(20px);}
-    to {opacity: 1; filter: blur(0px);}
-}
-
 article.phoneMissions .phoneMissionList .phoneList {
-    animation-name: openlist;
-    animation-duration: 0.5s;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 14px;
     margin-top: 20px;
+}
+
+@keyframes loading {
+    0%{filter: saturate(80%);}
+    50% {filter: saturate(0%);}
+    100% {filter: saturate(80%);}
+}
+
+article.phoneMissions .phoneMissionList .phoneList .loadingCard {
+    width: 100%;
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+article.phoneMissions .phoneMissionList .phoneList .loadingCard img {
+    width: 100%;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {

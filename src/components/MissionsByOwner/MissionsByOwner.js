@@ -1,25 +1,32 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect } from "react-router-dom";
 import "./MissionsByOwner.css";
 
 import Context from "../../Contexts/Context";
 
-import Loading from "../Loading/Loading";
+import Loading from "../../assets/loading_card.png";
 
 function MissionsByOwner() {
-    const [stateMission, setMission] = useState("");
-
+    const [state, setState] = useState({
+        missions: "",
+        loading: true
+    })
+    
     const missions = React.useContext(Context);
 
     useEffect(() => {
         fetch(`https://gtaiii.herokuapp.com/missions/${missions.name}`)
         .then(response => response.json())
-        .then(data => setMission(data));
-    }, []);
+        .then(data => setState({missions: data, loading: false}))
+    }, [missions]);
 
     const [stateText, setText] = useState("");
 
     return (
         <div className="missionsByOwner">
+            {!missions &&
+                <Redirect to="/missions" />
+            }
             <section className="missionsTitle">
                 <h1>Misiones de {missions.name}</h1>
             </section>
@@ -28,8 +35,8 @@ function MissionsByOwner() {
                     <img src={missions.image} alt="owner"></img>
                 </figure>
                 <section className="missionsList">
-                    {stateMission &&
-                        stateMission.map((mission) => 
+                    {state.missions &&
+                        state.missions.map((mission) => 
                             <div className="listCards" key={mission.id}>
                                 <div className="missionInfo">
                                     <h1>{mission.name}</h1>
@@ -45,8 +52,10 @@ function MissionsByOwner() {
                                 </div>
                             </div>
                         )
-                    } {!stateMission &&
-                        <Loading />
+                    } {state.loading &&
+                        <div className="loadingImage">
+                            <img src={Loading} alt=""></img>
+                        </div>
                     }
                 </section>
             </section>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./Phones.css";
 
 import Loading from "../Loading/Loading";
+import LoadingCards from "../../assets/loading_card.png";
 
 function Phones() {
     const [statePhones, setPhones] = useState("");
@@ -69,7 +70,9 @@ function Phones() {
                                             </div>
                                         ) 
                                     } {!stateMissions &&
-                                        <Loading />
+                                        <div className="loadingCard">
+                                            <img src={LoadingCards} alt="loading"></img>
+                                        </div>
                                     }
                                 </div>
                                 <div onClick={() => getMissions(phone.owner)} className="openList">
