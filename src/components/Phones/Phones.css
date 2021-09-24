@@ -7,8 +7,8 @@ article.phoneMissions {
     width: 100%;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #303030;
+    color: #F8F9F7;
     border-radius: 15px;
 }
 
@@ -21,7 +21,7 @@ article.phoneMissions .phoneMap {
 }
 
 article.phoneMissions .phoneMap h1 {
-    color: #FFFFFF;
+    color: #F8F9F7;
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin-bottom: 10px;
@@ -46,15 +46,15 @@ article.phoneMissions figure img {
 }
 
 article.phoneMissions .infoPhone {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     border-radius: 15px;
     width: 75%;
     padding: 15px;
-    color: #000000;
+    color: #303030;
 }
 
 article.phoneMissions .infoPhone h1 {
-    color: #000000;
+    color: #303030;
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
@@ -133,20 +133,20 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     font-family: 'Courgette', cursive;
-    color: #000000;
+    color: #303030;
     padding: 15px;
     border-radius: 15px 15px 0 0;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo .phoneObjective {
     background-color: #BF3921;
-    color: #FFFFFF;
+    color: #F8F9F7;
     display: inline-block;
     padding: 0 12px 0 12px;
     border-radius: 15px;
@@ -155,7 +155,7 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo 
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo .phoneReward {
     background-color: #F9CE65;
-    color: #000000;
+    color: #303030;
     display: inline-block;
     padding: 0 12px 0 12px;
     border-radius: 15px;
@@ -163,8 +163,8 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo 
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard p {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #F8F9F7;
+    color: #303030;
     padding: 10px 15px 15px 15px;
     border-radius: 0 0 15px 15px;
 }
@@ -204,7 +204,7 @@ article.phoneMissions .phoneMissionList .openList button:hover {
 }
 
 article.phoneMissions .phoneMissionList .openList button i {
-    color: #000000;
+    color: #303030;
 }
 
 @media (max-width: 800px) {

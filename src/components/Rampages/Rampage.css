@@ -5,7 +5,7 @@
 
 .rampages .rampageDescription {
     display: flex;
-    color: #FFFFFF;
+    color: #F8F9F7;
 }
 
 .rampages .rampageDescription .rampagesIcon {
@@ -23,13 +23,13 @@
 
 .rampages .rampageDescription .rampagesDescription {
     width: 70%;
-    color: #000000;
+    color: #303030;
 }
 
 .rampages .rampagesContainer {
     display: flex;
     padding-top: 20px;
-    color: #FFFFFF;
+    color: #F8F9F7;
 }
 
 .rampages .rampagesContainer .rampagesMaps {
@@ -38,8 +38,8 @@
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap {
     margin: 20px;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #F8F9F7;
+    color: #303030;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -60,8 +60,8 @@
 }
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap .rampMapTooltip {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #303030;
+    color: #F8F9F7;
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -108,7 +108,7 @@
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal i {
     width: 100%;
-    color: #FFFFFF;
+    color: #F8F9F7;
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
@@ -170,7 +170,7 @@ section.rampagesList {
 }
 
 section.rampagesList .rampagesCard {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -192,8 +192,8 @@ section.rampagesList .rampagesCard .rampageCardInfo h2 {
 }
 
 section.rampagesList .rampagesCard .rampageCardInfo .rampageCity {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #303030;
+    color: #F8F9F7;
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;
@@ -202,7 +202,7 @@ section.rampagesList .rampagesCard .rampageCardInfo .rampageCity {
 
 section.rampagesList .rampagesCard .rampageCardInfo .rampageGun {
     background-color: #F9CE65;
-    color: #000000;
+    color: #303030;
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;
@@ -211,7 +211,7 @@ section.rampagesList .rampagesCard .rampageCardInfo .rampageGun {
 
 section.rampagesList .rampagesCard .rampageCardInfo .rampageDuration {
     background-color: #BF3921;
-    color: #FFFFFF;
+    color: #F8F9F7;
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;

@@ -9,7 +9,7 @@ section.missionsTitle {
 }
 
 section.missionsTitle h1 {
-    color: #000000;
+    color: #303030;
     font-family: 'Courgette', cursive;
     font-size: 25px;
 }
@@ -20,7 +20,7 @@ section.missionsMaps {
 }
 
 section.missionsMaps h3 {
-    color: #FFFFFF;
+    color: #F8F9F7;
     padding: 10px;
     background-color: #BF3921;
     width: 60%;
@@ -89,7 +89,7 @@ section.missionsMaps .mapAndIcons ul li a {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    color: #000000;
+    color: #303030;
     text-decoration: none;
 }
 

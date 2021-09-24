@@ -4,7 +4,7 @@
 }
 
 .r3 .r3Description {
-    color: #000000;
+    color: #303030;
     padding: 10px;
 }
 
@@ -12,11 +12,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 14px;
-    color: #000000;
+    color: #303030;
 }
 
 .r3 .r3Cards article {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@
 
 .r3 .r3Cards article .r3Guide h5 {
     background-color: #BF3921;
-    color: #FFFFFF;
+    color: #F8F9F7;
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;
@@ -64,7 +64,7 @@
 
 .r3 .r3Cards article .r3Reward .r3RewardTitle h4 {
     background-color: #F9CE65;
-    color: #000000;
+    color: #303030;
     display: inline-block;
     padding: 0 12px 0 12px;
     border-radius: 15px;

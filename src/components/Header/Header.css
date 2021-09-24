@@ -25,7 +25,7 @@ section.title {
     display: flex;
     align-items: flex-end;
     padding-top: 10px;
-    color: #000000;
+    color: #303030;
 }
 
 section.contact {
@@ -36,7 +36,7 @@ section.contact {
 }
 
 section.contact .contactButton {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,12 +50,12 @@ section.contact .contactButton {
 
 section.contact .contactButton i {
     font-size: 25px;
-    color: #000000;
+    color: #303030;
     cursor: pointer;
 }
 
 @keyframes contactColor {
-    from {color: black;}
+    from {color: #303030;}
     to {color: #F9CE65;}
 }
 
@@ -75,7 +75,7 @@ section.contact article.contactCardInvisible {
 }
 
 section.contact article.contactCardVisible {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     display: flex;
     flex-direction: column;
     width: 180px;
@@ -93,15 +93,15 @@ section.contact article.contactCardVisible {
 
 article.contactCardVisible h4 {
     font-family: 'Courgette', cursive;
-    color: #000000;
+    color: #303030;
 }
 
 article.contactCardVisible p {
-    color: #000000;
+    color: #303030;
 }
 
 article.contactCardVisible a {
-    color: #000000;
+    color: #303030;
     text-decoration: none;
 }
 
@@ -110,23 +110,509 @@ article.contactCardVisible a i {
     margin-right: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 360px) and (orientation:portrait) {
     header {
-        justify-content: flex-end
+        justify-content: flex-end;
     }
-
     section.logo {
+        width: 15%;
         align-items: center;
-        width: 20%;
     }
-
+    section.logo a img {
+        width: 60%;
+    }
     section.title {
+        width: 50%;
         align-items: center;
+        font-size: 14px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 40px;
+        width: 40px;
+    }
+    section.contact article.contactCardVisible {
+        width: 60%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    header {
+        justify-content: flex-end;
+        height: 13vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 40px;
+        width: 40px;
+    }
+    section.contact article.contactCardVisible {
+        width: 40%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 375px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 60%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 14px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 40px;
+        width: 40px;
+    }
+    section.contact article.contactCardVisible {
+        width: 55%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 667px) and (orientation:landscape) {
+    header {
+        justify-content: flex-end;
+        height: 12vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 36px;
+        width: 36px;
+    }
+    section.contact .contactButton i {
+        font-size: 20px;
+    }
+    section.contact article.contactCardVisible {
+        width: 40%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 480px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 60%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 16px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 45px;
+        width: 45px;
+    }
+    section.contact article.contactCardVisible {
+        width: 40%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 667px) and (max-width: 854px) and (orientation:landscape) {
+    header {
+        justify-content: flex-end;
+        height: 10vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 30%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 36px;
+        width: 36px;
+    }
+    section.contact .contactButton i {
+        font-size: 20px;
+    }
+    section.contact article.contactCardVisible {
+        width: 35%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 600px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
         width: 50%;
     }
-    
-    section.contact {
+    section.title {
+        width: 50%;
         align-items: center;
+        font-size: 16px;
+    }
+    section.contact {
         width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 45px;
+        width: 45px;
+    }
+    section.contact article.contactCardVisible {
+        width: 40%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 854px) and (max-width: 1024px) and (orientation:landscape) {
+    header {
+        justify-content: flex-end;
+        height: 9vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 30%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 16px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 38px;
+        width: 38px;
+    }
+    section.contact .contactButton i {
+        font-size: 22px;
+    }
+    section.contact article.contactCardVisible {
+        width: 30%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+        height: 7vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 45%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 18px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 50px;
+        width: 50px;
+    }
+    section.contact article.contactCardVisible {
+        width: 35%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 800px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+        height: 7vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 45%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 20px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 55px;
+        width: 55px;
+    }
+    section.contact article.contactCardVisible {
+        width: 35%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation:landscape) {
+    header {
+        justify-content: flex-end;
+        height: 9vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 30%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 20px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 50px;
+        width: 50px;
+    }
+    section.contact .contactButton i {
+        font-size: 26px;
+    }
+    section.contact article.contactCardVisible {
+        width: 23%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) and (orientation:landscape) {
+    header {
+        height: 8vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 27%;
+    }
+    section.title {
+        width: 70%;
+        align-items: center;
+        font-size: 20px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 45px;
+        width: 45px;
+    }
+    section.contact .contactButton i {
+        font-size: 24px;
+    }
+    section.contact article.contactCardVisible {
+        width: 18%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+        height: 7vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 50%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 23px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 60px;
+        width: 60px;
+    }
+    section.contact .contactButton i {
+        font-size: 27px;
+    }
+    section.contact article.contactCardVisible {
+        width: 27%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1440px) and (orientation:landscape) {
+    header {
+        height: 8vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 27%;
+    }
+    section.title {
+        width: 70%;
+        align-items: center;
+        font-size: 20px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 50px;
+        width: 50px;
+    }
+    section.contact .contactButton i {
+        font-size: 24px;
+    }
+    section.contact article.contactCardVisible {
+        width: 15%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1080px) and (orientation:portrait) {
+    header {
+        justify-content: flex-end;
+        height: 7vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 50%;
+    }
+    section.title {
+        width: 50%;
+        align-items: center;
+        font-size: 26px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 80px;
+        width: 80px;
+    }
+    section.contact .contactButton i {
+        font-size: 33px;
+    }
+    section.contact article.contactCardVisible {
+        width: 19%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) and (orientation:landscape) {
+    header {
+        height: 7vh;
+    }
+    section.logo {
+        width: 15%;
+        align-items: center;
+    }
+    section.logo a img {
+        width: 27%;
+    }
+    section.title {
+        width: 70%;
+        align-items: center;
+        font-size: 22px;
+    }
+    section.contact {
+        width: 20%;
+        align-items: center;
+    }
+    section.contact .contactButton {
+        height: 60px;
+        width: 60px;
+    }
+    section.contact .contactButton i {
+        font-size: 30px;
+    }
+    section.contact article.contactCardVisible {
+        width: 14%;
+        padding: 20px;
     }
 }

@@ -9,7 +9,7 @@ section.vehiclesTitle {
 }
 
 section.vehiclesTitle h1 {
-    color: #000000;
+    color: #303030;
     font-family: 'Courgette', cursive;
     font-size: 25px;
 }
@@ -27,7 +27,7 @@ section.vehiclesTitle h1 {
 }
 
 .vehiclesContainer .vehicles .vehiclesCard .vehicleImage {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -44,8 +44,8 @@ section.vehiclesTitle h1 {
 }
 
 .vehiclesContainer .vehicles .vehiclesCard .vehicleInfo {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #F8F9F7;
+    color: #303030;
     padding: 10px;
     border-radius: 0 0 15px 15px;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
@@ -54,14 +54,14 @@ section.vehiclesTitle h1 {
 }
 
 .vehiclesContainer .vehicles .vehiclesCard .vehicleInfo h4 {
-    color: #000000;
+    color: #303030;
     font-family: 'Courgette', cursive;
 }
 
 .vehiclesContainer .vehicles .vehiclesCard .vehicleInfo p {
     background-color: #BF3921;
     display: inline-block;
-    color: #FFFFFF;
+    color: #F8F9F7;
     border-radius: 15px;
     padding: 0 15px 0 15px;
     margin-top: 10px;

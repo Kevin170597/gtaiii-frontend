@@ -12,7 +12,7 @@
     margin: 0 15px 0 20px;
     width: 18%;
     height: 70vh;
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 10px 15px 0;
-    color: #000000;
+    color: #303030;
     border-radius: 15px;
 }
 
@@ -56,15 +56,15 @@
     width: 100%;
     padding: 15px;
     border-radius: 15px 15px 0 0;
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
     -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
     -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
 }
 
 .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .cityTag {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #303030;
+    color: #F8F9F7;
     display: inline-block;
     padding: 0 15px 0 15px;
     border-radius: 15px;
@@ -73,7 +73,7 @@
 
 .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .rewardTag {
     background-color: #F9CE65;
-    color: #000000;
+    color: #303030;
     display: inline-block;
     padding: 0 15px 0 15px;
     border-radius: 15px;
@@ -82,7 +82,7 @@
 
 .missionsByOwner .missionsContainer .missionsList .listCards .missionInfo .objectiveTag {
     background-color: #BF3921;
-    color: #FFFFFF;
+    color: #F8F9F7;
     display: inline-block;
     padding: 0 15px 0 15px;
     border-radius: 15px;
@@ -92,7 +92,7 @@
     width: 100%;
     padding: 0px 15px 15px 15px;
     border-radius: 0 0 15px 15px;
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
     -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
     -moz-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);

@@ -5,7 +5,7 @@
 
 .jumps .jumpDescription {
     display: flex;
-    color: white;
+    color: #F8F9F7;
 }
 
 .jumps .jumpDescription .jumpIcon {
@@ -24,13 +24,13 @@
 .jumps .jumpDescription .jumpsDescription {
     width: 60%;
     padding-left: 20px;
-    color: #000000;
+    color: #303030;
 }
 
 .jumps .jumpsContainer {
     display: flex;
     padding-top: 20px;
-    color: #FFFFFF;
+    color: #F8F9F7;
 }
 
 .jumps .jumpsContainer .jumpsMaps {
@@ -39,8 +39,8 @@
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap {
     margin: 20px;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: #F8F9F7;
+    color: #303030;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -61,8 +61,8 @@
 }
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsMapTooltip {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #303030;
+    color: #F8F9F7;
     border-radius: 15px;
     height: 28px;
     padding: 0 12px 0 12px;
@@ -107,7 +107,7 @@
 
 .jumps .jumpsContainer .jumpsMaps .jumpsMap .jumpsModalContainer .jumpsModal i {
     width: 100%;
-    color: #FFFFFF;
+    color: #F8F9F7;
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
@@ -169,7 +169,7 @@ section.jumpsList {
 }
 
 section.jumpsList .jumpsCard {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     margin-bottom: 10px;
     padding: 10px 15px 15px 15px;
     width: 100%;
@@ -181,7 +181,7 @@ section.jumpsList .jumpsCard {
 
 section.jumpsList .jumpsCard p {
     background-color: #BF3921;
-    color: #FFFFFF;
+    color: #F8F9F7;
     border-radius: 15px;
     display: inline-block;
     padding: 0 12px 0 12px;

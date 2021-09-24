@@ -4,7 +4,7 @@
 }
 
 .rc4x4 .rc, .container4x4 {
-    color: #000000;
+    color: #303030;
 }
 
 .rc4x4 .rc .rcTitle, .container4x4 .title4x4 {
@@ -36,7 +36,7 @@
 }
 
 .rc4x4 .rc .rcCard h4, .container4x4 .card4x4 h4 {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     padding: 10px 0 10px 15px;
     border-radius: 15px 15px 0 0;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
@@ -45,7 +45,7 @@
 }
 
 .rc4x4 .rc .rcCard figure, .container4x4 .card4x4 figure {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     padding: 0 15px 0 15px;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
     -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
@@ -58,7 +58,7 @@
 }
 
 .rc4x4 .rc .rcCard .openLocation, .container4x4 .card4x4 .openLocation{
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     border: none;
     padding: 0 0 10px 20px;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
@@ -68,7 +68,7 @@
 
 .rc4x4 .rc .rcCard .openLocation p, .container4x4 .card4x4 .openLocation p {
     display: inline-block;
-    color: #FFFFFF;
+    color: #F8F9F7;
     border-radius: 15px;
     padding: 0 12px 0 12px;
     background-color: #BF3921;
@@ -76,7 +76,7 @@
 }
 
 .rc4x4 .rc .rcCard h5, .container4x4 .card4x4 h5 {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     padding: 0 0 10px 15px;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
     -webkit-box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
@@ -84,7 +84,7 @@
 }
 
 .rc4x4 .rc .rcCard p, .container4x4 .card4x4 p {
-    background-color: #FFFFFF;
+    background-color: #F8F9F7;
     padding: 0 15px 15px 15px;
     border-radius: 0 0 15px 15px;
     box-shadow: 14px 17px 23px -9px rgba(115,110,110,0.2);
@@ -120,7 +120,7 @@
 
 .rc4x4 .rc .rcCard .rcModalContainer .modalMapRC i, .container4x4 .card4x4 .ModalContainer4x4 .modalMap4x4 i {
     width: 100%;
-    color: #FFFFFF;
+    color: #F8F9F7;
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
