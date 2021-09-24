@@ -97,32 +97,570 @@ section.missionsMaps .mapAndIcons ul li a p {
     font-size: 12px;
 }
 
-@media (max-width: 800px) {
-    section.missionsMaps {
-        flex-direction: column;
-        width: 90%;
-        margin-left: 5%;
+@media (max-width: 360px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
     }
-
-    section.missionsMaps h2 {
-        text-align: center;
+    section.missionsTitle {
+        height: 8vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
         font-size: 20px;
     }
-
+    section.missionsMaps {
+        flex-direction: column;
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 16px;
+    }
     section.missionsMaps .shoreside {
         width: 100%;
     }
-    
     section.missionsMaps .staunton{
         width: 100%;
     }
-    
     section.missionsMaps .portland {
         width: 100%;
     }
-
     section.missionsMaps .mapAndIcons {
         justify-content: left;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 12vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 16px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 76%;
+        text-align: left;
+        font-size: 10px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 0 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 375px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 7vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 16px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 667px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 12vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 16px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 76%;
+        text-align: left;
+        font-size: 10px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 0 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 6vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 16px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 854px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 12vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 16px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 60%;
+        text-align: left;
+        font-size: 12px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 15px 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 5vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 16px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 855px) and (max-width: 1024px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 10vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 16px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 60%;
+        text-align: left;
+        font-size: 12px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 15px 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 7vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 16px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 7vh;
+        padding: 10px 0 10px 20px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 70%;
+        margin-left: 15%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 18px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 8vh;
+        padding: 10px 0 10px 40px;
+    }
+    section.missionsTitle h1 {
+        font-size: 16px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 60%;
+        text-align: left;
+        font-size: 16px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 15px 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 7vh;
+        padding: 10px 0 10px 50px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 18px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 10vh;
+        padding: 30px 0 10px 50px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 60%;
+        text-align: left;
+        font-size: 18px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 15px 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1080px) and (orientation:portrait) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 4vh;
+        padding: 10px 0 10px 50px;
+    }
+    section.missionsTitle h1 {
+        font-size: 20px;
+    }
+    section.missionsMaps {
+        flex-direction: column;
+        width: 50%;
+        margin-left: 25%;
+    }
+    section.missionsMaps h3 {
+        text-align: left;
+        font-size: 18px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) and (orientation:landscape) {
+    .missions {
+        padding-top: 0px;
+    }
+    section.missionsTitle {
+        height: 10vh;
+        padding: 30px 0 10px 50px;
+    }
+    section.missionsTitle h1 {
+        font-size: 25px;
+    }
+    section.missionsMaps {
+        width: 96%;
+        margin-left: 2%;
+    }
+    section.missionsMaps h3 {
+        width: 60%;
+        text-align: left;
+        font-size: 18px;
+    }
+    section.missionsMaps .shoreside {
+        width: 100%;
+    }
+    section.missionsMaps .staunton{
+        width: 100%;
+    }
+    section.missionsMaps .portland {
+        width: 100%;
+    }
+    section.missionsMaps .mapAndIcons {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    section.missionsMaps .mapAndIcons img {
+        border-radius: 0 15px 15px 15px;
+    }
+    section.missionsMaps .mapAndIcons ul li a p {
+        font-size: 12px;
     }
 }
