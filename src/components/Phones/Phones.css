@@ -106,7 +106,7 @@ article.phoneMissions .modalVisible img {
 
 article.phoneMissions .phoneMissionList .phoneList {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 14px;
     margin-top: 20px;
 }
@@ -207,38 +207,668 @@ article.phoneMissions .phoneMissionList .openList button i {
     color: #303030;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 360px) and (orientation:portrait) {
     article.phoneMissions .phoneCard {
         flex-wrap: wrap;
     }
-
     article.phoneMissions .phoneMap {
         width: 40%;
     }
-
     article.phoneMissions figure {
         width: 60%;
     }
-    
     article.phoneMissions .infoPhone {
         width: 100%;
         margin-top: 10px;
     }
-
     article.phoneMissions .phoneMissionList .phoneList {
         grid-template-columns: repeat(1, 1fr);
     }
-
     article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
         width: 100%;
     }
-
     article.phoneMissions .modalVisible .modalMap {
         width: 90%;
     }
-
     article.phoneMissions .modalVisible img {
         width: 96%;
         height: auto;
+    }
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 15%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 14px;
+    }
+    article.phoneMissions figure {
+        width: 20%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 65%;
+        margin-top: 0px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 14px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 375px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 35%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 15px;
+    }
+    article.phoneMissions figure {
+        width: 65%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 100%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 15px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 667px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 15%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 14px;
+    }
+    article.phoneMissions figure {
+        width: 20%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 65%;
+        margin-top: 0px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 14px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 35%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 17px;
+    }
+    article.phoneMissions figure {
+        width: 65%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 100%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 854px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 15%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 18px;
+    }
+    article.phoneMissions figure {
+        width: 20%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 65%;
+        margin-top: 5px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 35%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 17px;
+    }
+    article.phoneMissions figure {
+        width: 65%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 100%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 855px) and (max-width: 1024px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 10%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 18px;
+    }
+    article.phoneMissions figure {
+        width: 20%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 70%;
+        margin-top: 5px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article.phoneMissions .phoneMap {
+        width: 20%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 17px;
+    }
+    article.phoneMissions figure {
+        width: 40%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 100%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article.phoneMissions .phoneMap {
+        width: 20%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 17px;
+    }
+    article.phoneMissions figure {
+        width: 40%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 100%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 8%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 18px;
+    }
+    article.phoneMissions figure {
+        width: 15%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 77%;
+        margin-top: 5px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article.phoneMissions .phoneMap {
+        width: 10%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 17px;
+    }
+    article.phoneMissions figure {
+        width: 20%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 70%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 8%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 18px;
+    }
+    article.phoneMissions figure {
+        width: 15%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 77%;
+        margin-top: 5px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1080px) and (orientation:portrait) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article.phoneMissions .phoneMap {
+        width: 10%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 17px;
+    }
+    article.phoneMissions figure {
+        width: 20%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 70%;
+        margin-top: 10px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 17px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) and (orientation:landscape) {
+    article.phoneMissions .phoneCard {
+        flex-wrap: wrap;
+    }
+    article.phoneMissions .phoneMap {
+        width: 5%;
+    }
+    article.phoneMissions .phoneMap h1 {
+        font-size: 18px;
+    }
+    article.phoneMissions figure {
+        width: 10%;
+    }
+    article.phoneMissions .infoPhone {
+        width: 85%;
+        margin-top: 5px;
+    }
+    article.phoneMissions .infoPhone h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+    article.phoneMissions .infoPhone p {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    article.phoneMissions .phoneMissionList .phoneList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
+        width: 100%;
+    }
+    article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
+        font-size: 15px;
+        padding: 15px 0 10px 15px;
+    }
+    article.phoneMissions .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.phoneMissions .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.phoneMissions .modalVisible img {
+        width: auto;
+        height: 85%;
     }
 }

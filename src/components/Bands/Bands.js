@@ -39,15 +39,10 @@ function Bands() {
                                     </section>
                                     <section className="modalInfo">
                                         <article className="bandlogo">
-                                            <div className="info">
-                                                <p className="boss">Jefe: {band.boss}</p>
-                                                <p className="location">{band.location}</p>
-                                                <p className="nationality">{band.nationality}</p>
-                                                <p className="infovehicle">{band.vehicle}</p>
-                                            </div>
-                                            <figure className="logoImage">
-                                                <img src={band.logo} alt="logo"></img>
-                                            </figure>
+                                            <p className="boss">Jefe: {band.boss}</p>
+                                            <p className="location">{band.location}</p>
+                                            <p className="nationality">{band.nationality}</p>
+                                            <p className="infovehicle">{band.vehicle}</p>
                                         </article>
                                         <figure className="member">
                                             <img src={band.member} alt="member"></img>

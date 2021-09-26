@@ -127,14 +127,7 @@ article.bandlogo {
     padding-left: 20px;
 }
 
-article.bandlogo .info {
-    color: #303030;
-    padding: 8px;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-article.bandlogo .info .boss {
+article.bandlogo .boss {
     background-color: #A11751;
     border-radius: 15px;
     padding: 0 15px 0 15px;
@@ -143,7 +136,7 @@ article.bandlogo .info .boss {
     display: inline-block;
 }
 
-article.bandlogo .info .location {
+article.bandlogo .location {
     background-color: #F9CE65;
     border-radius: 15px;
     padding: 0 15px 0 15px;
@@ -152,7 +145,7 @@ article.bandlogo .info .location {
     display: inline-block;
 }
 
-article.bandlogo .info .nationality {
+article.bandlogo .nationality {
     background-color: #303030;
     border-radius: 15px;
     padding: 0 15px 0 15px;
@@ -161,25 +154,13 @@ article.bandlogo .info .nationality {
     display: inline-block;
 }
 
-article.bandlogo .info .infovehicle {
+article.bandlogo .infovehicle {
     background-color: #BF3921;
     border-radius: 15px;
     padding: 0 15px 0 15px;
     color: #F8F9F7;
     margin-bottom: 5px;
     display: inline-block;
-}
-
-figure.logoImage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-figure.logoImage img {
-    width: 80%;
 }
 
 figure.member {
@@ -236,28 +217,15 @@ figure.car .sunImage {
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 60%;
-        height: 60%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 60%;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
         height: 40%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 20px 20px 20px;
     }
     figure.member {
         width: 40%;
-        align-items: flex-start;
-        height: 60%;
+        align-items: center;
+        height: 40%;
     }
     figure.member img {
         height: 90%;
@@ -265,11 +233,11 @@ figure.car .sunImage {
     }
     figure.car {
         width: 100%;
-        height: 40%;
+        height: 60%;
         background-size: auto 80%;
     }
     figure.car .carImage {
-        height: 80%;
+        height: 70%;
         width: auto;
     }
 }
@@ -301,23 +269,10 @@ figure.car .sunImage {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 50%;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 50%;
-    }
-    figure.logoImage img {
-        height: 65%;
-        width: auto;
+        padding: 10px 0 10px 25px;
     }
     figure.member {
         width: 20%;
@@ -359,28 +314,15 @@ figure.car .sunImage {
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 60%;
-        height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 50%;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 50%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        height: 40%;
+        padding: 20px 15px 10px 25px;
     }
     figure.member {
         width: 40%;
-        align-items: flex-start;
-        height: 50%;
+        align-items: center;
+        height: 40%;
     }
     figure.member img {
         height: 90%;
@@ -388,11 +330,11 @@ figure.car .sunImage {
     }
     figure.car {
         width: 100%;
-        height: 50%;
-        background-size: auto 70%;
+        height: 60%;
+        background-size: auto 80%;
     }
     figure.car .carImage {
-        height: 80%;
+        height: 75%;
         width: auto;
     }
 }
@@ -424,23 +366,10 @@ figure.car .sunImage {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 60%;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 40%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 0 20px 25px;
     }
     figure.member {
         width: 20%;
@@ -448,7 +377,7 @@ figure.car .sunImage {
         height: 100%;
     }
     figure.member img {
-        height: 80%;
+        height: 75%;
         width: auto;
     }
     figure.car {
@@ -482,28 +411,15 @@ figure.car .sunImage {
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
-        width: 60%;
-        height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
+    article.bandlogo {
+        width: 50%;
         height: 40%;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 60%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 30px 10px 30px;
     }
     figure.member {
-        width: 40%;
+        width: 50%;
         align-items: center;
-        height: 50%;
+        height: 40%;
     }
     figure.member img {
         height: 90%;
@@ -511,11 +427,11 @@ figure.car .sunImage {
     }
     figure.car {
         width: 100%;
-        height: 50%;
+        height: 60%;
         background-size: auto 80%;
     }
     figure.car .carImage {
-        height: 90%;
+        height: 80%;
         width: auto;
     }
 }
@@ -541,30 +457,16 @@ figure.car .sunImage {
     }
     section.cardsContainer .modal .modalCard {
         width: 80%;
-        height: 80%;
+        height: 70%;
     }
     section.modalInfo {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 30px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 40%;
-    }
-    figure.logoImage img {
-        height: 100%;
-        width: auto;
+        padding: 20px 10px 10px 30px;
     }
     figure.member {
         width: 20%;
@@ -578,7 +480,7 @@ figure.car .sunImage {
     figure.car {
         width: 50%;
         height: 100%;
-        background-size: 75%;
+        background-size: 70%;
     }
     figure.car .carImage {
         height: auto;
@@ -603,33 +505,19 @@ figure.car .sunImage {
         height: 8%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 90%;
-        height: 80%;
+        width: 70%;
+        height: 50%;
     }
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
-        width: 60%;
+    article.bandlogo {
+        width: 50%;
         height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 30%;
-        padding-left: 40px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 70%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 30px 20px 30px;
     }
     figure.member {
-        width: 40%;
+        width: 50%;
         align-items: center;
         height: 50%;
     }
@@ -668,22 +556,17 @@ figure.car .sunImage {
         height: 15%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 70%;
+        width: 60%;
         height: 60%;
     }
     section.modalInfo {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 30px;
+        padding: 20px 30px 10px 25px;
     }
     figure.logoImage {
         padding-top: 0px;
@@ -734,30 +617,16 @@ figure.car .sunImage {
         height: 8%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 60%;
-        height: 60%;
+        width: 55%;
+        height: 55%;
     }
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
-        width: 60%;
+    article.bandlogo {
+        width: 50%;
         height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 40px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 60%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 30px 10px 30px;
     }
     figure.member {
         width: 40%;
@@ -803,33 +672,19 @@ figure.car .sunImage {
         height: 8%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
     }
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
-        width: 60%;
+    article.bandlogo {
+        width: 50%;
         height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 40px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 60%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 20px 10px 20px;
     }
     figure.member {
-        width: 40%;
+        width: 50%;
         align-items: center;
         height: 50%;
     }
@@ -868,31 +723,17 @@ figure.car .sunImage {
         height: 15%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
     }
     section.modalInfo {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 30px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 40%;
-    }
-    figure.logoImage img {
-        height: 80%;
-        width: auto;
+        padding: 10px 10px 10px 20px;
     }
     figure.member {
         width: 20%;
@@ -934,31 +775,17 @@ figure.car .sunImage {
         height: 15%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
     }
     section.modalInfo {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 30px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 40%;
-    }
-    figure.logoImage img {
-        height: 80%;
-        width: auto;
+        padding: 10px 20px 10px 20px;
     }
     figure.member {
         width: 20%;
@@ -1004,33 +831,19 @@ figure.car .sunImage {
         height: 8%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 40%;
     }
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
-        width: 60%;
+    article.bandlogo {
+        width: 50%;
         height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 40px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 60%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 20px 40px 10px 20px;
     }
     figure.member {
-        width: 40%;
+        width: 50%;
         align-items: center;
         height: 50%;
     }
@@ -1069,8 +882,8 @@ figure.car .sunImage {
         height: 15%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 50%;
-        height: 50%;
+        width: 45%;
+        height: 40%;
     }
     section.modalInfo {
         flex-wrap: wrap;
@@ -1079,21 +892,7 @@ figure.car .sunImage {
     section.cardsContainer article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 30px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 40%;
-    }
-    figure.logoImage img {
-        height: 80%;
-        width: auto;
+        padding: 10px 40px 10px 20px;
     }
     figure.member {
         width: 20%;
@@ -1139,33 +938,19 @@ figure.car .sunImage {
         height: 8%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 40%;
     }
     section.modalInfo {
         flex-wrap: wrap;
     }
-    section.cardsContainer article.bandlogo {
-        width: 60%;
+    article.bandlogo {
+        width: 50%;
         height: 50%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 40px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 60%;
-    }
-    figure.logoImage img {
-        height: 90%;
-        width: auto;
+        padding: 10px 80px 10px 30px;
     }
     figure.member {
-        width: 40%;
+        width: 50%;
         align-items: center;
         height: 50%;
     }
@@ -1204,31 +989,17 @@ figure.car .sunImage {
         height: 15%;
     }
     section.cardsContainer .modal .modalCard {
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
     }
     section.modalInfo {
         flex-wrap: wrap;
         height: 85%;
     }
-    section.cardsContainer article.bandlogo {
+    article.bandlogo {
         width: 30%;
         height: 100%;
-        padding: 0;
-    }
-    article.bandlogo .info {
-        margin: 0;
-        height: 40%;
-        padding-left: 30px;
-    }
-    figure.logoImage {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 40%;
-    }
-    figure.logoImage img {
-        height: 80%;
-        width: auto;
+        padding: 20px 60px 10px 20px;
     }
     figure.member {
         width: 20%;

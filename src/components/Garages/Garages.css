@@ -128,7 +128,7 @@ article.garagelist .carsList .garageList {
     animation-name: openlist;
     animation-duration: 0.5s;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-gap: 14px;
     margin-top: 15px;
 }
@@ -181,45 +181,629 @@ article.garagelist .carsList .openList button:hover {
     color: #F8F9F7;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 360px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
     .garages .garageDescription .garagesDescription {
         width: 100%;
     }
-
     article.garagelist .garageCard {
         flex-wrap: wrap;
     }
-
     article.garagelist .garageMap {
         width: 40%;
     }
-
     article.garagelist .garageMap img {
         width: 100%;
     }
-
     article.garagelist figure {
         width: 60%;
     }
-
     article.garagelist .infoGarage {
         width: 100%;
         margin-top: 14px;
     }
-
     article.garagelist .modalVisible .modalMap {
         width: 90%;
     }
-
     article.garagelist .modalVisible img {
         width: 96%;
         height: auto;
     }
-
     article.garagelist .carsList .garageList {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 30%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 70%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 34%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 375px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 40%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 60%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 667px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 30%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 70%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 34%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 35%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 65%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible img {
+        width: 96%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 854px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 10%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 30%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 60%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 34%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 85%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 35%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 65%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 55%;
+    }
+    article.garagelist .modalVisible img {
+        width: 60%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 855px) and (max-width: 1024px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 10%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 30%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 60%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 70%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 35%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 65%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 55%;
+    }
+    article.garagelist .modalVisible img {
+        width: 60%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 30%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 70%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 55%;
+    }
+    article.garagelist .modalVisible img {
+        width: 60%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 10%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 30%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 60%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 70%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 30%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 70%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 55%;
+    }
+    article.garagelist .modalVisible img {
+        width: 60%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 10%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 25%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 65%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 70%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1080px) and (orientation:portrait) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 30%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 70%;
+    }
+    article.garagelist .infoGarage {
+        width: 100%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 90%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 55%;
+    }
+    article.garagelist .modalVisible img {
+        width: 60%;
+        height: auto;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    article.garagelist .carsList .garageList .vehiclesCard {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) and (orientation:landscape) {
+    article.garagelist {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .garages .garageDescription .garagesDescription {
+        width: 100%;
+    }
+    article.garagelist .garageCard {
+        flex-wrap: wrap;
+    }
+    article.garagelist .garageMap {
+        width: 7%;
+    }
+    article.garagelist .garageMap img {
+        width: 100%;
+    }
+    article.garagelist figure {
+        width: 18%;
+        margin-top: 0px;
+    }
+    article.garagelist .infoGarage {
+        width: 75%;
+        margin-top: 14px;
+    }
+    article.garagelist .modalVisible .modalMap {
+        width: 100%;
+    }
+    article.garagelist .modalVisible .modalMap i {
+        width: 35%;
+    }
+    article.garagelist .modalVisible img {
+        width: auto;
+        height: 70%;
+    }
+    article.garagelist .carsList .garageList {
+        grid-template-columns: repeat(7, 1fr);
+    }
     article.garagelist .carsList .garageList .vehiclesCard {
         width: 100%;
     }
