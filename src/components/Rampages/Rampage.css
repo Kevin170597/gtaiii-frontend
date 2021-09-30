@@ -5,7 +5,7 @@
 
 .rampages .rampageDescription {
     display: flex;
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 .rampages .rampageDescription .rampagesIcon {
@@ -23,13 +23,13 @@
 
 .rampages .rampageDescription .rampagesDescription {
     width: 70%;
-    color: #303030;
+    color: var(--black);
 }
 
 .rampages .rampagesContainer {
     display: flex;
     padding-top: 20px;
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 .rampages .rampagesContainer .rampagesMaps {
@@ -38,8 +38,8 @@
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap {
     margin: 20px;
-    background-color: #F8F9F7;
-    color: #303030;
+    background-color: var(--white);
+    color: var(--black);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -60,8 +60,8 @@
 }
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap .rampMapTooltip {
-    background-color: #303030;
-    color: #F8F9F7;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -108,7 +108,7 @@
 
 .rampages .rampagesContainer .rampagesMaps .rampageMap .rampageModalContainer .rampageModal i {
     width: 100%;
-    color: #F8F9F7;
+    color: var(--white);
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
@@ -139,7 +139,7 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background-color: #F9CE65;
+    background-color: var(--yellow);
     cursor: pointer;
 }
 
@@ -170,7 +170,7 @@ section.rampagesList {
 }
 
 section.rampagesList .rampagesCard {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -192,8 +192,8 @@ section.rampagesList .rampagesCard .rampageCardInfo h2 {
 }
 
 section.rampagesList .rampagesCard .rampageCardInfo .rampageCity {
-    background-color: #303030;
-    color: #F8F9F7;
+    background-color: var(--black);
+    color: var(--white);
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;
@@ -201,8 +201,8 @@ section.rampagesList .rampagesCard .rampageCardInfo .rampageCity {
 }
 
 section.rampagesList .rampagesCard .rampageCardInfo .rampageGun {
-    background-color: #F9CE65;
-    color: #303030;
+    background-color: var(--yellow);
+    color: var(--black);
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;
@@ -210,8 +210,8 @@ section.rampagesList .rampagesCard .rampageCardInfo .rampageGun {
 }
 
 section.rampagesList .rampagesCard .rampageCardInfo .rampageDuration {
-    background-color: #BF3921;
-    color: #F8F9F7;
+    background-color: var(--red);
+    color: var(--white);
     padding: 0 12px 0 12px;
     border-radius: 15px;
     display: inline-block;

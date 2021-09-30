@@ -5,14 +5,14 @@
 
 .garages .garageDescription {
     display: flex;
-    color: #F8F9F7;
+    color: var(--white);
     margin-bottom: 20px;
 }
 
 .garages .garageDescription .garagesDescription {
     width: 80%;
     padding-left: 20px;
-    color: #303030;
+    color: var(--black);
 }
 
 article.garagelist {
@@ -20,9 +20,9 @@ article.garagelist {
     margin-left: 5%;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #303030;
+    background-color: var(--black);
     border-radius: 15px;
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 article.garagelist .garageCard {
@@ -34,7 +34,7 @@ article.garagelist .garageMap {
 }
 
 article.garagelist .garageMap h1 {
-    color: #F8F9F7;
+    color: var(--white);
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin-bottom: 10px;
@@ -59,22 +59,22 @@ article.garagelist figure img {
 }
 
 article.garagelist .infoGarage {
-    background-color: #F8F9F7;
-    color: #303030;
+    background-color: var(--white);
+    color: var(--black);
     width: 70%;
     padding: 15px;
     border-radius: 15px;
 }
 
 article.garagelist .infoGarage h1 {
-    color: #303030;
+    color: var(--black);
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
 
 article.garagelist .infoGarage p {
     margin-top: 20px;
-    color: #303030;
+    color: var(--black);
 }
 
 article.garagelist .modalInvisible {
@@ -110,7 +110,7 @@ article.garagelist .modalVisible .modalMap i {
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
     cursor: pointer;
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 article.garagelist .modalVisible img {
@@ -138,14 +138,14 @@ article.garagelist .carsList .garageList .vehiclesCard {
 }
 
 article.garagelist .carsList .garageList .vehiclesCard h1 {
-    background-color: #F8F9F7;
-    color: #303030;
+    background-color: var(--white);
+    color: var(--black);
     padding: 10px;
     border-radius: 15px 15px 0 0;
 }
 
 article.garagelist .carsList .garageList .vehiclesCard figure {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     padding: 10px;
     width: 100%;
     border-radius: 0 0 15px 15px;
@@ -167,7 +167,7 @@ article.garagelist .carsList .openList button {
     border: none;
     position: relative;
     top: 40px;
-    background-color: #F9CE65;
+    background-color: var(--yellow);
     cursor: pointer;
 }
 
@@ -178,7 +178,7 @@ article.garagelist .carsList .openList button:hover {
 }
 
 .fa-grip-lines {
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 @media (max-width: 360px) and (orientation:portrait) {

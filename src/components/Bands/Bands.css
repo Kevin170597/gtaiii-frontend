@@ -9,7 +9,7 @@ section.bandsTitle {
 }
 
 section.bandsTitle h1 {
-    color: #303030;
+    color: var(--black);
     font-family: 'Courgette', cursive;
     font-size: 25px;
 }
@@ -30,8 +30,8 @@ section.cardsContainer article:hover {
 }
 
 section.cardsContainer article h4 {
-    background-color: #F8F9F7;
-    color: #303030;
+    background-color: var(--white);
+    color: var(--black);
     font-family: 'Courgette', cursive;
     padding: 12px;
     border-radius: 15px 15px 0 0;
@@ -41,7 +41,7 @@ section.cardsContainer article h4 {
 }
 
 figure.logoContainer {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@ section.cardsContainer .modal {
 }
 
 section.cardsContainer .modal .modalCard {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     width: 60%;
     height: 70%;
     border-radius: 15px;
@@ -97,7 +97,7 @@ section.modalHeader .modalTitle {
 }
 
 section.modalHeader .modalTitle h1 {
-    color: #303030;
+    color: var(--black);
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin-left: 10px;
@@ -114,7 +114,7 @@ section.modalHeader .close {
 
 section.modalHeader .close i {
     font-size: 20px;
-    color: #303030;
+    color: var(--black);
 }
 
 section.modalInfo {
@@ -128,37 +128,37 @@ article.bandlogo {
 }
 
 article.bandlogo .boss {
-    background-color: #A11751;
+    background-color: var(--red);
     border-radius: 15px;
     padding: 0 15px 0 15px;
-    color: #F8F9F7;
+    color: var(--white);
     margin-bottom: 5px;
     display: inline-block;
 }
 
 article.bandlogo .location {
-    background-color: #F9CE65;
+    background-color: var(--yellow);
     border-radius: 15px;
     padding: 0 15px 0 15px;
-    color: #303030;
+    color: var(--black);
     margin-bottom: 5px;
     display: inline-block;
 }
 
 article.bandlogo .nationality {
-    background-color: #303030;
+    background-color: var(--black);
     border-radius: 15px;
     padding: 0 15px 0 15px;
-    color: #F8F9F7;
+    color: var(--white);
     margin-bottom: 5px;
     display: inline-block;
 }
 
 article.bandlogo .infovehicle {
-    background-color: #BF3921;
+    background-color: var(--red);
     border-radius: 15px;
     padding: 0 15px 0 15px;
-    color: #F8F9F7;
+    color: var(--white);
     margin-bottom: 5px;
     display: inline-block;
 }

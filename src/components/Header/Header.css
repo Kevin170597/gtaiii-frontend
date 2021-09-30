@@ -25,7 +25,7 @@ section.title {
     display: flex;
     align-items: flex-end;
     padding-top: 10px;
-    color: #303030;
+    color: var(--black);
 }
 
 section.contact {
@@ -36,7 +36,7 @@ section.contact {
 }
 
 section.contact .contactButton {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,17 +50,17 @@ section.contact .contactButton {
 
 section.contact .contactButton i {
     font-size: 25px;
-    color: #303030;
+    color: var(--black);
     cursor: pointer;
 }
 
 @keyframes contactColor {
-    from {color: #303030;}
-    to {color: #F9CE65;}
+    from {color: var(--black);}
+    to {color: var(--yellow);}
 }
 
 section.contact i:hover {
-    color: #F9CE65;
+    color: var(--yellow);
     animation-name: contactColor;
     animation-duration: 0.5s;
 }
@@ -75,7 +75,7 @@ section.contact article.contactCardInvisible {
 }
 
 section.contact article.contactCardVisible {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     width: 180px;
@@ -93,15 +93,15 @@ section.contact article.contactCardVisible {
 
 article.contactCardVisible h4 {
     font-family: 'Courgette', cursive;
-    color: #303030;
+    color: var(--black);
 }
 
 article.contactCardVisible p {
-    color: #303030;
+    color: var(--black);
 }
 
 article.contactCardVisible a {
-    color: #303030;
+    color: var(--black);
     text-decoration: none;
 }
 

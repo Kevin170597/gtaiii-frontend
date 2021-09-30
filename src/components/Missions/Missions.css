@@ -9,7 +9,7 @@ section.missionsTitle {
 }
 
 section.missionsTitle h1 {
-    color: #303030;
+    color: var(--black);
     font-family: 'Courgette', cursive;
     font-size: 25px;
 }
@@ -20,9 +20,9 @@ section.missionsMaps {
 }
 
 section.missionsMaps h3 {
-    color: #F8F9F7;
+    color: var(--white);
     padding: 10px;
-    background-color: #BF3921;
+    background-color: var(--red);
     width: 60%;
     border-radius: 15px 15px 0 0;
 }
@@ -62,14 +62,14 @@ section.missionsMaps .mapAndIcons img {
 
 @keyframes iconsHidden {
     from {position: relative; right: 20%;opacity: 0; filter: blur(5px); background: none;}
-    to {right: -20%; opacity: 1;filter: blur(0px); background-color: #F9CE65;}
+    to {right: -20%; opacity: 1;filter: blur(0px); background-color: var(--yellow);}
 }
 
 section.missionsMaps .mapAndIcons ul.icons {
     animation-name: iconsHidden;
     animation-duration: 1s;
     z-index: 0;
-    background-color: #F9CE65;
+    background-color: var(--yellow);
     border-radius: 0 15px 15px 0;
 }
 
@@ -89,7 +89,7 @@ section.missionsMaps .mapAndIcons ul li a {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    color: #303030;
+    color: var(--black);
     text-decoration: none;
 }
 

@@ -5,7 +5,7 @@
 
 .packages .packagesDescription {
     display: flex;
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 .packages .packagesDescription .packageIcon {
@@ -23,12 +23,12 @@
 
 .packages .packagesDescription .packageDescription {
     width: 70%;
-    color: #303030;
+    color: var(--black);
 }
 
 .packages section.packagesRewards {
     margin-top: 10px;
-    color: #303030;
+    color: var(--black);
     padding: 10px;
 }
 
@@ -55,7 +55,7 @@
 .packages .packagesContainer {
     display: flex;
     padding-top: 20px;
-    color: #F8F9F7;
+    color: var(--white);
 }
 
 .packages .packagesContainer .packagesMaps {
@@ -64,8 +64,8 @@
 
 .packages .packagesContainer .packagesMaps .packageMap {
     margin: 20px;
-    background-color: #F8F9F7;
-    color: #303030;
+    background-color: var(--white);
+    color: var(--black);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -86,8 +86,8 @@
 }
 
 .packages .packagesContainer .packagesMaps .packageMap .packageMapTooltip {
-    background-color: #303030;
-    color: #F8F9F7;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 15px;
     height: 28px;
     padding: 0 12px 0 12px;
@@ -132,7 +132,7 @@
 
 .packages .packagesContainer .packagesMaps .packageMap .packageModalContainer .packageModal i {
     width: 100%;
-    color: #F8F9F7;
+    color: var(--white);
     display: flex;
     justify-content: flex-end;
     padding: 0px 0px 10px 0px;
@@ -163,7 +163,7 @@
     height: 50px;
     border: none;
     border-radius: 50%;
-    background-color: #F9CE65;
+    background-color: var(--yellow);
     cursor: pointer;
 }
 
@@ -194,7 +194,7 @@ section.packagesList {
 }
 
 section.packagesList .packagesCard {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     width: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -205,8 +205,8 @@ section.packagesList .packagesCard {
 }
 
 section.packagesList .packagesCard p {
-    background-color: #BF3921;
-    color: #F8F9F7;
+    background-color: var(--red);
+    color: var(--white);
     border-radius: 15px;
     display: inline-block;
     padding: 0 12px 0 12px;

@@ -7,8 +7,8 @@ article.phoneMissions {
     width: 100%;
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #303030;
-    color: #F8F9F7;
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 15px;
 }
 
@@ -21,7 +21,7 @@ article.phoneMissions .phoneMap {
 }
 
 article.phoneMissions .phoneMap h1 {
-    color: #F8F9F7;
+    color: var(--white);
     font-family: 'Courgette', cursive;
     font-size: 20px;
     margin-bottom: 10px;
@@ -46,15 +46,15 @@ article.phoneMissions figure img {
 }
 
 article.phoneMissions .infoPhone {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     border-radius: 15px;
     width: 75%;
     padding: 15px;
-    color: #303030;
+    color: var(--black);
 }
 
 article.phoneMissions .infoPhone h1 {
-    color: #303030;
+    color: var(--black);
     font-family: 'Courgette', cursive;
     font-size: 20px;
 }
@@ -133,20 +133,20 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard {
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard h1 {
-    background-color: #F8F9F7;
+    background-color: var(--white);
     font-family: 'Courgette', cursive;
-    color: #303030;
+    color: var(--black);
     padding: 15px;
     border-radius: 15px 15px 0 0;
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo {
-    background-color: #F8F9F7;
+    background-color: var(--white);
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo .phoneObjective {
-    background-color: #BF3921;
-    color: #F8F9F7;
+    background-color: var(--red);
+    color: var(--white);
     display: inline-block;
     padding: 0 12px 0 12px;
     border-radius: 15px;
@@ -154,8 +154,8 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo 
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo .phoneReward {
-    background-color: #F9CE65;
-    color: #303030;
+    background-color: var(--yellow);
+    color: var(--black);
     display: inline-block;
     padding: 0 12px 0 12px;
     border-radius: 15px;
@@ -163,8 +163,8 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard .phoneInfo 
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard p {
-    background-color: #F8F9F7;
-    color: #303030;
+    background-color: var(--white);
+    color: var(--black);
     padding: 10px 15px 15px 15px;
     border-radius: 0 0 15px 15px;
 }
@@ -174,7 +174,7 @@ article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard b {
 }
 
 article.phoneMissions .phoneMissionList .phoneList .missionPhoneCard b:hover {
-    color: #BF3921;
+    color: var(--red);
 }
 
 article.phoneMissions .phoneMissionList .phoneListNone {
@@ -193,7 +193,7 @@ article.phoneMissions .phoneMissionList .openList button {
     border: none;
     position: relative;
     top: 40px;
-    background-color: #F9CE65;
+    background-color: var(--yellow);
     cursor: pointer;
 }
 
@@ -204,7 +204,7 @@ article.phoneMissions .phoneMissionList .openList button:hover {
 }
 
 article.phoneMissions .phoneMissionList .openList button i {
-    color: #303030;
+    color: var(--black);
 }
 
 @media (max-width: 360px) and (orientation:portrait) {
