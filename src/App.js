@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Axios from "axios";
 
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -19,17 +20,36 @@ import Packages from "./components/Packages/Packages";
 import Jumps from "./components/Jumps/Jumps";
 import Garages from "./components/Garages/Garages";
 
+import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
+
 import Context from "./Contexts/Context";
 
 function App() {
   const [stateOwner, setOwner] = useState("");
+
+  const [loginStatus, setLogin] = useState("");
+
+  Axios.defaults.withCredentials = true;
+
+  useEffect(() => {
+    Axios.get('https://gtaiii.herokuapp.com/users/login')
+    .then((response) => {
+        console.log(response)
+        if (response.data.loggedIn) {
+            setLogin(response.data.user[0])
+        }
+    })
+  }, []);
 
   return (
       <div className="App">
         <Router>
           <Navbar />
           <div className="container">
-            <Header />
+            <Context.Provider value={loginStatus}>
+              <Header />
+            </Context.Provider>
             <Switch>
               <Route path="/maps">
                 <Maps />
@@ -71,6 +91,14 @@ function App() {
               </Route>
               <Route path="/garages">
                 <Garages />
+              </Route>
+              <Route path="/register">
+                <Register />
+              </Route>
+              <Route path="/login">
+                <Context.Provider value={loginStatus}>
+                  <Login />
+                </Context.Provider>
               </Route>
               <Route path="/">
                 <Home />
