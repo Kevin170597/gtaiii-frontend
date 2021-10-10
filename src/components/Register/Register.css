@@ -1,0 +1,67 @@
+.registerContainer {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+}
+
+.registerContainer .formRegisterContainer {
+    background-color: var(--black);
+    width: 30%;
+    height: 80%;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.registerContainer .formRegisterContainer h1 {
+    color: var(--white);
+}
+
+.registerContainer .formRegisterContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerContainer .formRegisterContainer form small {
+    color: var(--yellow);
+}
+
+.registerContainer .formRegisterContainer form input {
+    background: none;
+    border: none;
+    border-bottom: solid 1px var(--white);
+    margin-top: 20px;
+    padding-left: 10px;
+    color: var(--white);
+    height: 38px;
+}
+
+.registerContainer .formRegisterContainer form input.userErr {
+    border-bottom: solid 1px var(--yellow);
+}
+
+.registerContainer .formRegisterContainer form input.emailErr {
+    border-bottom: solid 1px var(--yellow);
+}
+
+.registerContainer .formRegisterContainer form input.passErr {
+    border-bottom: solid 1px var(--yellow);
+}
+
+.registerContainer .formRegisterContainer form input.pass2Err {
+    border-bottom: solid 1px var(--yellow);
+}
+
+.registerContainer .formRegisterContainer form input:focus {
+    outline: none;
+}
+
+.registerContainer .formRegisterContainer form button {
+    background: var(--white);
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    margin: 20px 0 20px 0;
+    height: 38px;
+    cursor: pointer;
+}

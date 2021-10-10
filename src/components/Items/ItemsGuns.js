@@ -5,9 +5,7 @@ import Loading from "../Loading/Loading";
 
 function ItemsGuns() {
     const [stateItems, setItems] = useState("");
-    console.log(stateItems)
     const [stateGuns, setGuns] = useState("");
-    console.log(stateGuns)
 
     useEffect(() => {
         fetch("https://gtaiii.herokuapp.com/items")

@@ -1,0 +1,61 @@
+.loginContainer {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+}
+
+.loginContainer .formLoginContainer {
+    background-color: var(--black);
+    width: 30%;
+    height: 60%;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.loginContainer .formLoginContainer h1 {
+    color: var(--white);
+}
+
+.loginContainer .formLoginContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContainer .formLoginContainer form small {
+    color: var(--yellow);
+}
+
+.loginContainer .formLoginContainer form input {
+    background: none;
+    border: none;
+    border-bottom: solid 1px var(--white);
+    margin-top: 20px;
+    padding-left: 10px;
+    color: var(--white);
+    height: 38px;
+}
+
+.loginContainer .formLoginContainer form input:focus {
+    outline: none;
+}
+
+.loginContainer .formLoginContainer form button {
+    background: var(--white);
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    margin: 20px 0 20px 0;
+    height: 38px;
+    cursor: pointer;
+}
+
+.loginContainer .formLoginContainer p {
+    color: var(--white);
+    text-align: center;
+}
+
+.loginContainer .formLoginContainer p a {
+    text-decoration: none;
+    color: var(--yellow);
+}

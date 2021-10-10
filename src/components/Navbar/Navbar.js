@@ -17,7 +17,6 @@ import garage_icon from "../../assets/nav_icons/garage_icon.png";
 
 function Navbar() {
     const [stateTip, setTip] = useState("tooltipNone");
-
     const [stateMenu, setMenu] = useState(true);
 
     return (

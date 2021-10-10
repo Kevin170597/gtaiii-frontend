@@ -35,7 +35,7 @@ function App() {
   useEffect(() => {
     Axios.get('https://gtaiii.herokuapp.com/users/login')
     .then((response) => {
-        console.log(response)
+        //console.log(response)
         if (response.data.loggedIn) {
             setLogin(response.data.user[0])
         }
@@ -93,7 +93,9 @@ function App() {
                 <Garages />
               </Route>
               <Route path="/register">
-                <Register />
+                <Context.Provider value={loginStatus}>
+                  <Register />
+                </Context.Provider>
               </Route>
               <Route path="/login">
                 <Context.Provider value={loginStatus}>

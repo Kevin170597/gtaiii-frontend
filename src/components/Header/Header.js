@@ -19,6 +19,10 @@ function Header() {
         .then(window.location.reload(false))
     }
 
+    const mouseLeave = () => {
+        setTimeout(() => setUser(!stateUser), 1000)
+    }
+
     return (
         <header>
             <section className="logo">
@@ -31,9 +35,9 @@ function Header() {
             </section>
             <section className="user">
                 <div className="userButton">
-                    <i onClick={() => setUser(!stateUser)} className="far fa-user"></i>
+                    <i onMouseEnter={() => setUser(!stateUser)} className="far fa-user"></i>
                 </div>
-                <article className={stateUser ? "userCardVisible" : "userCardInvisible"}>
+                <article className={stateUser ? "userCardVisible" : "userCardInvisible"} onMouseLeave={mouseLeave}>
                     {user &&
                         <div className="userInfo"> 
                             <h4>{user.name}</h4>

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Axios from "axios";
-import { Redirect } from "react-router-dom";
+import { Redirect, NavLink } from "react-router-dom";
+import "./Login.css";
 
 import Context from "../../Contexts/Context";
 
@@ -10,23 +11,40 @@ function Login() {
 
     const login = React.useContext(Context);
 
+    const [validator, setValidator] = useState("");
+    //console.log(validator)
+
     const submit = (e) => {
         e.preventDefault();
         Axios.post('https://gtaiii.herokuapp.com/users/login', {user: user, password: password})
         .then((response) => {
-            console.log(response);
-            window.location.reload(false);
+            setValidator(response.data)
         });
     };
 
+    useEffect(() => {
+        Axios.get('https://gtaiii.herokuapp.com/users/login')
+        .then((response) => {
+            if (response.data.loggedIn) {
+                window.location.href = "/"
+            }
+        })
+    }, [])
+
     return (
-        <div>
+        <div className="loginContainer">
             {login && <Redirect to="/" />}
-            <form onSubmit={submit}>
-                <input type="text" name="name" placeholder="Nombre" onChange={(e) => setUser(e.target.value)}></input>
-                <input type="password" name="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)}></input>
-                <button>Login</button>
-            </form>
+            <div className="formLoginContainer">
+                <h1>Iniciar sesión</h1>
+                <form onSubmit={submit}>
+                    <input autoComplete="off" type="text" name="user" placeholder="Nombre" onChange={(e) => setUser(e.target.value)}></input>
+                    <small>{validator.user ? validator.user.msg : ""}</small>
+                    <input type="password" name="password" placeholder="Contraseña" onChange={(e) => setPassword(e.target.value)}></input>
+                    <small>{validator.password ? validator.password.msg : ""}</small>
+                    <button>Iniciar sesión</button>
+                </form>
+                <p>¿Primera vez aquí? <NavLink to="/register">Registrate.</NavLink></p>
+            </div>
         </div>
     )
 }
