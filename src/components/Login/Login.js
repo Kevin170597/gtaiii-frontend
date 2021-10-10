@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Axios from "axios";
 import { Redirect, NavLink } from "react-router-dom";
 import "./Login.css";
@@ -12,24 +12,14 @@ function Login() {
     const login = React.useContext(Context);
 
     const [validator, setValidator] = useState("");
-    //console.log(validator)
 
     const submit = (e) => {
         e.preventDefault();
         Axios.post('https://gtaiii.herokuapp.com/users/login', {user: user, password: password})
         .then((response) => {
-            setValidator(response.data)
+            response.data.success ? window.location.href = "/" : setValidator(response.data)
         });
     };
-
-    useEffect(() => {
-        Axios.get('https://gtaiii.herokuapp.com/users/login')
-        .then((response) => {
-            if (response.data.loggedIn) {
-                window.location.href = "/"
-            }
-        })
-    }, [])
 
     return (
         <div className="loginContainer">
